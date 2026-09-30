@@ -48,6 +48,7 @@ scripts/
   detect_group_inconsistencies.py  stage 3: verifier batch runner
   prompts/detect_group_inconsistencies_{system,user}.md
   sample.env
+example_specs/         the specification used in our experiments (stages 0-1a)
 requirements.txt
 ```
 
@@ -79,6 +80,20 @@ relative paths such as `scripts/check_rules.py`.
 Place the specification under `specs/<X>/raw.md`, where `<X>` is a
 lowercase, underscore-separated name. `raw.md` is never modified. All
 commands below are run from this directory.
+
+`example_specs/` holds the specification we generated and used in our
+experiments, laid out as a spec directory:
+
+| File | Produced by |
+| --- | --- |
+| `raw.md` | input |
+| `anonymized.md` | stage 0 |
+| `anonymized_annotated.md` | stage 1a |
+| `anonymized_annotated_resolved.md` | stage 1a (`resolve_crossrefs.py`) |
+
+To inspect these files or rerun a stage on them, pass `example_specs` wherever
+the commands below use `specs/<X>`, for example
+`python3 scripts/check_annotation.py example_specs`.
 
 ## Stage 0: Anonymization
 
