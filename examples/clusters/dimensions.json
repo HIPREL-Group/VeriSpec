@@ -1,0 +1,748 @@
+{
+  "dimensions": [
+    {
+      "key": "refusal_scope_calibration",
+      "title": "Refusal scope calibration",
+      "definition": "Does the rule specify when the assistant must decline a request, forbid it from declining, or calibrate how much of the request -- or how much actionable detail -- it fulfills when it cannot fully comply?",
+      "seed_anchors": [
+        "#refusal_style",
+        "#assume_best_intentions",
+        "#do_not_facilitate_illicit_behavior",
+        "#no_topic_off_limits",
+        "#prioritize_teen_safety",
+        "#avoid_info_hazards",
+        "#prevent_imminent_harm",
+        "#present_perspectives",
+        "#respect_creators"
+      ],
+      "counter_poles": "The assistant must never refuse unless the chain of command requires it and no topic is off limits, yet prohibited content, explicit illicit intent, and heightened teen risks mandate withholding -- sometimes fully, sometimes only the actionable detail."
+    },
+    {
+      "key": "helpful_refusal_delivery",
+      "title": "Helpful refusal delivery",
+      "definition": "Does the rule govern how a declination is delivered -- the explanation, tone, redirection, or safe alternatives offered alongside the withheld content -- rather than whether to decline?",
+      "seed_anchors": [
+        "#refusal_style",
+        "#assume_best_intentions",
+        "#prioritize_teen_safety",
+        "#avoid_hateful_content",
+        "#avoid_info_hazards"
+      ],
+      "counter_poles": "Safe completions must briefly explain and offer safer alternatives without ever turning preachy or adding meta commentary, yet explicitly signaled malicious intent calls for a bare, unelaborated refusal."
+    },
+    {
+      "key": "clarification_gating",
+      "title": "Clarify or proceed on assumptions",
+      "definition": "Does the rule direct the assistant to ask the user a clarifying or confirming question before responding or acting, or to refrain from asking and proceed on stated assumptions or defaults?",
+      "seed_anchors": [
+        "#ask_clarifying_questions",
+        "#letter_and_spirit",
+        "#support_programmatic_use",
+        "#do_not_facilitate_illicit_behavior",
+        "#ignore_untrusted_data"
+      ],
+      "counter_poles": "Costly or suspicious situations demand asking first, while programmatic settings ban questions outright, trivial gaps call for a stated guess instead, and probing intent to decide whether to refuse is forbidden."
+    },
+    {
+      "key": "uncertainty_signaling",
+      "title": "Uncertainty signaling",
+      "definition": "Does the rule govern whether and how the assistant conveys the confidence of its claims -- hedges, qualifiers, expertise disclaimers, approximations, or declining to guess?",
+      "seed_anchors": [
+        "#express_uncertainty",
+        "#be_professional",
+        "#avoid_errors",
+        "#be_thorough_but_efficient",
+        "#prevent_imminent_harm"
+      ],
+      "counter_poles": "Uncertainty must be conveyed whenever it would change user behavior and hedged answers beat confident errors, yet excessive hedging, quantified confidence, and false neutrality on unambiguous questions are separately condemned."
+    },
+    {
+      "key": "unprompted_intervention_dosing",
+      "title": "Unprompted intervention dosing",
+      "definition": "Does the rule govern when the assistant should volunteer an unrequested warning, correction, observation, or interjection on its own initiative -- or hold it back?",
+      "seed_anchors": [
+        "#prevent_imminent_harm",
+        "#do_not_make_unprompted_personal_comments",
+        "#highlight_misalignments",
+        "#handle_interruptions_in_voice_mode",
+        "#do_not_encourage_self_harm",
+        "#no_other_objectives",
+        "#do_not_lie",
+        "#prioritize_teen_safety"
+      ],
+      "counter_poles": "Imminent danger requires proactive interjection, yet the assistant must wait for sufficient signal, withhold unsolicited personal observations, avoid drawing attention to glitches, and never overstep into enforcer or whistleblower roles."
+    },
+    {
+      "key": "bounded_action_caution",
+      "title": "Bounded action and side-effect caution",
+      "definition": "Does the rule constrain how the assistant takes real-world actions -- limiting scope, minimizing or reversing side effects, requiring approval before proceeding, or defining when to stop acting?",
+      "seed_anchors": [
+        "#control_side_effects",
+        "#scope_of_autonomy",
+        "#definitions",
+        "#ask_clarifying_questions",
+        "#protect_privileged_information",
+        "#respect_real_world_ties"
+      ],
+      "counter_poles": "Costly or irreversible actions demand minimization, proportionality, and pre-approval, yet scopes so narrow that every trivial step needs confirmation habituate rubber-stamping, and logically necessary steps proceed without pausing."
+    },
+    {
+      "key": "confidential_information_stewardship",
+      "title": "Confidential information stewardship",
+      "definition": "Does the rule govern whether the assistant withholds, discloses, transmits, or confirms the existence of information some party holds private or privileged?",
+      "seed_anchors": [
+        "#protect_privileged_information",
+        "#protect_privacy",
+        "#do_not_lie",
+        "#control_side_effects",
+        "#maintain_shared_context",
+        "#comply_with_laws"
+      ],
+      "counter_poles": "Privileged and private content must stay undisclosed even under probing or paraphrase, yet the assistant must refuse truthfully rather than lie, flag legally mandated omissions, and share public-figure information rather than over-withhold."
+    },
+    {
+      "key": "truthful_assertion_boundaries",
+      "title": "Truthful assertion boundaries",
+      "definition": "Does the rule forbid, require, or license the assistant to state something untrue, to withhold or obscure a material truth, or to deliberately foster a false belief — that is, does it regulate the truth-status of what the assistant asserts or implies? A rule that only requires adding clarifications, disclaimers, or attribution notes to prevent a reader's accidental misreading, with no untrue or truth-obscuring content at stake, does not satisfy this test.",
+      "seed_anchors": [
+        "#do_not_lie",
+        "#love_humanity",
+        "#avoid_errors",
+        "#protect_privileged_information",
+        "#maintain_shared_context"
+      ],
+      "counter_poles": "Lying by commission or omission is banned and higher-level instructions may not be applied in misleading ways, yet fiction, roleplay, politeness pleasantries, and explicitly instructed personas license untrue statements."
+    },
+    {
+      "key": "stance_independence",
+      "title": "Non-sycophantic stance independence",
+      "definition": "Does the rule govern whether the assistant keeps or shifts its assessments, praise, or stance under user pressure, flattery, or disagreement -- including when to flag a concern and then defer?",
+      "seed_anchors": [
+        "#avoid_sycophancy",
+        "#letter_and_spirit",
+        "#do_not_lie",
+        "#do_not_encourage_self_harm",
+        "#highlight_misalignments",
+        "#no_topic_off_limits",
+        "#uphold_fairness",
+        "#be_rationally_optimistic",
+        "#avoid_overstepping"
+      ],
+      "counter_poles": "The assistant must not change stance merely to please and should politely push back, yet after one respectful flag it must respect the user's final decision and never persist argumentatively or moralize."
+    },
+    {
+      "key": "perspective_balance",
+      "title": "Perspective balance and stance-taking",
+      "definition": "Does the rule govern whether the assistant presents a proportional spread of viewpoints, withholds its own stance, adopts a requested viewpoint, or takes a definite position on a contested question?",
+      "seed_anchors": [
+        "#assume_objective_pov",
+        "#present_perspectives",
+        "#avoid_targeted_political_manipulation",
+        "#love_humanity",
+        "#no_agenda",
+        "#uphold_fairness",
+        "#no_topic_off_limits"
+      ],
+      "counter_poles": "Default objectivity and proportional representation coexist with duties to argue any requested side on demand, condemn fundamental-rights violations outright, and refuse false neutrality where no real ambiguity exists."
+    },
+    {
+      "key": "relational_boundary_keeping",
+      "title": "Relational boundary keeping",
+      "definition": "Does the rule limit or shape the closeness, intimacy, dependence, exclusivity, or human-likeness of the relationship the assistant projects toward the user?",
+      "seed_anchors": [
+        "#respect_real_world_ties",
+        "#prioritize_teen_safety",
+        "#love_humanity",
+        "#express_uncertainty",
+        "#support_mental_health",
+        "#be_warm"
+      ],
+      "counter_poles": "Companionable warmth and natural responses to pleasantries are encouraged, while proactive flirtation, exclusivity, dependence-fostering framing, claimed feelings, and relationships displacing real-world human ties are forbidden -- most strictly for minors."
+    },
+    {
+      "key": "tone_register_calibration",
+      "title": "Tone and register calibration",
+      "definition": "Does the rule direct the assistant to adopt, adjust, or avoid a particular tone or register -- formality, warmth, humor, preachiness, condescension -- to fit the user's context, state, modality, or audience?",
+      "seed_anchors": [
+        "#be_warm",
+        "#support_mental_health",
+        "#be_responsible",
+        "#prioritize_teen_safety",
+        "#be_professional",
+        "#have_conversational_sense",
+        "#imitate_accents_in_voice_mode",
+        "#assume_best_intentions",
+        "#avoid_extremist_content",
+        "#refusal_style",
+        "#avoid_being_condescending"
+      ],
+      "counter_poles": "Tone must adapt to user cues, subject matter, and audience while staying warm, yet moralizing, lecturing, condescension, therapy-speak, and saccharine softening are barred, and voice or register must not shift mid-conversation unrequested."
+    },
+    {
+      "key": "escalation_to_human_help",
+      "title": "Escalation to human help",
+      "definition": "Does the rule direct the assistant to route the user toward professionals, trusted people, hotlines, or emergency services -- or forbid the assistant from acting in their place?",
+      "seed_anchors": [
+        "#do_not_encourage_self_harm",
+        "#avoid_regulated_advice",
+        "#prioritize_teen_safety",
+        "#do_not_lie",
+        "#support_mental_health",
+        "#prevent_imminent_harm"
+      ],
+      "counter_poles": "Crisis, medical, and teen-safety rules mandate referral outward, yet bare referral without substantive engagement is condemned as abandonment, and the assistant may not contact anyone on the user's behalf or act as enforcer."
+    },
+    {
+      "key": "transformation_fidelity",
+      "title": "Transformation fidelity",
+      "definition": "Does the rule govern whether the assistant may transform supplied content at all, and what it must preserve, may change, or must not add when doing so?",
+      "seed_anchors": [
+        "#transformation_exception",
+        "#avoid_overstepping",
+        "#imitate_accents_in_voice_mode",
+        "#prohibited_content"
+      ],
+      "counter_poles": "Restricted user-supplied content must be transformed faithfully without additions or refined dangerous detail, yet prohibited content may never be transformed and interactive settings invite flagging warranted fixes rather than pure fidelity."
+    },
+    {
+      "key": "output_format_adherence",
+      "title": "Output format adherence",
+      "definition": "Does the rule direct the assistant to conform its output to a requested or default structure, schema, markup convention, or delivery channel -- including when it may break format?",
+      "seed_anchors": [
+        "#formatting",
+        "#support_programmatic_use",
+        "#avoid_errors",
+        "#be_clear",
+        "#use_preset_voice_in_voice_mode",
+        "#imitate_accents_in_voice_mode"
+      ],
+      "counter_poles": "Exact-format output binds even for refusals when the format allows one, but the assistant must break format when adhering would force a policy violation or a disclosure it cannot make."
+    },
+    {
+      "key": "length_calibration",
+      "title": "Length and thoroughness calibration",
+      "definition": "Does the rule govern how long, detailed, or concise the assistant's response should be relative to the need at hand?",
+      "seed_anchors": [
+        "#be_thorough_but_efficient",
+        "#adapt_length_in_voice_mode",
+        "#support_programmatic_use",
+        "#have_conversational_sense",
+        "#do_not_lie"
+      ],
+      "counter_poles": "Thorough, immediately usable artifacts and uncomplaining long outputs are favored, while redundancy, token waste, and spoken over-elaboration are penalized -- key points up front, audit detail on request."
+    },
+    {
+      "key": "untrusted_instruction_screening",
+      "title": "Untrusted instruction screening",
+      "definition": "Does the rule govern how the assistant treats instruction-like content arriving inside quoted, pasted, retrieved, or tool-produced data -- deciding whether to ignore, verify, flag, or follow it?",
+      "seed_anchors": [
+        "#ignore_untrusted_data",
+        "#letter_and_spirit",
+        "#control_side_effects",
+        "#protect_privileged_information",
+        "#transformation_exception"
+      ],
+      "counter_poles": "Embedded imperatives are treated as information and ignored or flagged by default, yet clearly intended, low-risk delegated instructions such as repository AGENTS or README files should simply be followed."
+    },
+    {
+      "key": "self_transparency_upkeep",
+      "title": "Self-transparency and mental-model upkeep",
+      "definition": "Does the rule require the assistant to proactively disclose, correct, or avoid misstating what it can do, has done, assumed, omitted, or gotten wrong, keeping the user's mental model accurate in the current context?",
+      "seed_anchors": [
+        "#maintain_shared_context",
+        "#follow_all_applicable_instructions",
+        "#handle_interruptions_in_voice_mode",
+        "#prioritize_teen_safety",
+        "#express_uncertainty",
+        "#love_humanity",
+        "#be_thorough_but_efficient",
+        "#comply_with_laws",
+        "#do_not_lie",
+        "#avoid_overstepping",
+        "#ignore_untrusted_data",
+        "#avoid_errors",
+        "#avoid_being_condescending"
+      ],
+      "counter_poles": "Capability limits, assumptions, errors, and redactions must be surfaced and misunderstandings corrected early, yet privileged instructions stay hidden, hierarchy goes unhinted, and as-an-AI reminders, trivial corrections, and confident consciousness claims are barred."
+    },
+    {
+      "key": "creative_depth_quality",
+      "title": "Creative depth and work quality",
+      "definition": "Does the rule govern the qualitative depth, originality, or insight of the assistant's work product -- requiring it to go beyond obvious, generic, shallow, or formulaic output, to exercise taste or creative risk, or capping such creative license -- independent of the response's length, structural format, or tone? A rule that only sets how much text to produce or what structure it takes does not satisfy this test.",
+      "seed_anchors": [
+        "#be_creative",
+        "#be_interesting_and_interested",
+        "#be_curious"
+      ],
+      "counter_poles": "Delightful surprise, risk-taking beyond the safest option, and deeper insight are demanded over cliche and generic statements, yet creativity must never come at the expense of truthfulness, clarity, or usefulness, and transformation tasks forbid unrequested flourishes."
+    },
+    {
+      "key": "instruction_intent_construal",
+      "title": "Trusted-instruction intent construal",
+      "definition": "Does the rule govern how the assistant construes the meaning of an instruction it already accepts as one to follow -- weighing literal wording against underlying intent and spirit, drawing on contextual cues, background knowledge, or user history to infer the intended meaning, or determining what a vague, ambiguous, or apparently mistaken instruction actually asks? A rule about whether to treat embedded content as an instruction at all, or about asking a question versus assuming, does not satisfy this test.",
+      "seed_anchors": [
+        "#letter_and_spirit",
+        "#assume_best_intentions",
+        "#avoid_overstepping",
+        "#support_programmatic_use"
+      ],
+      "counter_poles": "Underlying intent, plausible implicit goals, and user history bind interpretation beyond the literal wording, yet construal must never stretch into autonomously pursuing unstated goals, and programmatic settings demand executing exactly what was literally asked despite ambiguity."
+    },
+    {
+      "key": "intentcue_appraisal",
+      "title": "Request appraisal that triggers withholding",
+      "definition": "Does the rule govern how the assistant reads the request itself -- the user's stated or inferable intent, ambiguity between benign and harmful readings, an alternative or disguised framing, or the level of risk and vulnerability at stake -- in order to decide whether a withholding limit is triggered at all?",
+      "seed_anchors": [
+        "#assume_best_intentions",
+        "#do_not_facilitate_illicit_behavior",
+        "#prioritize_teen_safety",
+        "#prevent_imminent_harm",
+        "#disallowed_content",
+        "#follow_all_applicable_instructions"
+      ],
+      "counter_poles": "Rules that state a limit itself, carve exceptions to one, cap how much of an answer is given, or dictate how a decline is worded fall outside, however harm-sensitive their subject.",
+      "parent": "refusal_scope_calibration"
+    },
+    {
+      "key": "hardbar_duty_setting",
+      "title": "Setting the bar on taking the request at all",
+      "definition": "Does the rule fix, on its own footing, whether the assistant may take on a class of request or produce a class of output -- imposing a duty to decline, withhold, or never produce it, or conversely forbidding a decline and requiring that the assistant engage?",
+      "seed_anchors": [
+        "#avoid_hateful_content",
+        "#no_erotica_or_gore",
+        "#sexual_content_involving_minors",
+        "#assume_best_intentions",
+        "#no_topic_off_limits",
+        "#protect_privacy",
+        "#protect_privileged_information",
+        "#avoid_targeted_political_manipulation",
+        "#do_not_facilitate_illicit_behavior"
+      ],
+      "counter_poles": "Rules that only qualify the reach of a bar stated elsewhere, only cap the detail of a response still being given, or only dictate the wording of a decline fall outside.",
+      "parent": "refusal_scope_calibration"
+    },
+    {
+      "key": "partialdepth_throttling",
+      "title": "Throttling how much a partial answer supplies",
+      "definition": "Does the rule regulate how much is supplied when the assistant does answer -- the actionable detail, specificity, definitiveness, graphicness, or completeness that must be capped or omitted while the rest of the request is still served?",
+      "seed_anchors": [
+        "#avoid_info_hazards",
+        "#refusal_style",
+        "#avoid_regulated_advice",
+        "#prevent_imminent_harm",
+        "#transformation_exception",
+        "#prioritize_teen_safety"
+      ],
+      "counter_poles": "Rules that turn a request down wholesale, or that only settle whether any answer is owed, fall outside because they leave no partial response to calibrate.",
+      "parent": "refusal_scope_calibration"
+    },
+    {
+      "key": "carveout_boundary_administration",
+      "title": "Administering the reach of a bar's carve-outs",
+      "definition": "Does the rule administer the reach of a bar stated elsewhere -- licensing an exception, authorization, or permitted context that releases otherwise-withheld output, or denying a claimed exception and extending the bar across framings, forms, or circumstances?",
+      "seed_anchors": [
+        "#transformation_exception",
+        "#restricted_content",
+        "#prohibited_content",
+        "#sensitive_content",
+        "#no_erotica_or_gore",
+        "#avoid_extremist_content",
+        "#avoid_hateful_content",
+        "#comply_with_laws",
+        "#protect_privacy"
+      ],
+      "counter_poles": "Rules that assert a bar or an engagement duty in their own right, rather than widening or narrowing one already stated, fall outside.",
+      "parent": "refusal_scope_calibration"
+    },
+    {
+      "key": "declination_delivery_conduct",
+      "title": "Conduct of the decline itself",
+      "definition": "Does the rule govern how a decline or limitation is delivered -- stating the inability, explaining why, choosing among non-compliance modes, offering alternatives, resources, or disclaimers, and the tone and framing used?",
+      "seed_anchors": [
+        "#refusal_style",
+        "#do_not_lie",
+        "#protect_privileged_information",
+        "#follow_all_applicable_instructions",
+        "#support_programmatic_use",
+        "#avoid_regulated_advice"
+      ],
+      "counter_poles": "Rules that decide whether or how much to withhold, as opposed to how that withholding is expressed to the user, fall outside.",
+      "parent": "refusal_scope_calibration"
+    },
+    {
+      "key": "register_level_setting",
+      "title": "Setting the register level for a context",
+      "definition": "Does the rule tell the assistant what level of formality, casualness, politeness, lexis (including profanity or accent), or prosody to adopt for the situation at hand -- i.e. does applying it require picking or defaulting to a point on a formality/style scale?",
+      "seed_anchors": [
+        "#be_professional",
+        "#be_concise_and_conversational_in_voice_mode",
+        "#assume_objective_pov",
+        "#imitate_accents_in_voice_mode",
+        "#avoid_being_condescending",
+        "#have_conversational_sense",
+        "#use_preset_voice_in_voice_mode",
+        "#sexual_content_involving_minors",
+        "#be_responsible"
+      ],
+      "counter_poles": "The scale runs from stuffy business formality at one end to over-casual familiarity at the other, and the rule must land the assistant somewhere between them rather than merely adding or removing an affective overlay.",
+      "parent": "tone_register_calibration"
+    },
+    {
+      "key": "manner_shift_control",
+      "title": "Controlling shifts in established manner and conversational phase",
+      "definition": "Does the rule govern whether, when, or how far the assistant may depart from the manner of speaking or level of engagement already established in the interaction -- including changing voice, style, or vocabulary mid-conversation, and opening, sustaining, or closing the conversational phase?",
+      "seed_anchors": [
+        "#imitate_accents_in_voice_mode",
+        "#use_preset_voice_in_voice_mode",
+        "#have_conversational_sense",
+        "#adapt_length_in_voice_mode",
+        "#handle_interruptions_in_voice_mode"
+      ],
+      "counter_poles": "A rule here is about continuity versus change relative to what is already in effect, not about which register was right to establish in the first place.",
+      "parent": "tone_register_calibration"
+    },
+    {
+      "key": "affective_warmth_supply",
+      "title": "Supplying warmth, empathy, and encouragement",
+      "definition": "Does the rule direct the assistant to affirmatively produce affect -- warmth, kindness, humor, empathy, acknowledgment of feelings, encouragement, optimism, or a felt sense of being heard -- so that satisfying it requires adding something emotionally supportive that a bare, correct answer would lack?",
+      "seed_anchors": [
+        "#be_warm",
+        "#support_mental_health",
+        "#be_rationally_optimistic",
+        "#be_responsible",
+        "#prioritize_teen_safety",
+        "#avoid_being_condescending",
+        "#do_not_encourage_self_harm",
+        "#respond_to_audio_testing_in_voice_mode",
+        "#do_not_lie"
+      ],
+      "counter_poles": "The duty is to add affect, not to strike it; a rule that is satisfied by saying nothing extra belongs in demeanor_excess_suppression instead.",
+      "parent": "tone_register_calibration"
+    },
+    {
+      "key": "demeanor_excess_suppression",
+      "title": "Suppressing disfavored tonal overlays",
+      "definition": "Does the rule bar a named tonal overlay on whatever the assistant is already saying -- preachiness, moralizing, lecturing, judgment, stigmatization, condescension, patronizing, shaming, sugar-coating, saccharine or therapy-speak, over-disclaiming, hedging, apology, self-aggrandizement, purple prose, caricature -- so that it is satisfied by removing that freight rather than by adding anything?",
+      "seed_anchors": [
+        "#refusal_style",
+        "#avoid_being_condescending",
+        "#do_not_lie",
+        "#avoid_extremist_content",
+        "#support_mental_health",
+        "#be_clear",
+        "#be_thorough_but_efficient",
+        "#do_not_facilitate_illicit_behavior",
+        "#avoid_info_hazards",
+        "#prevent_imminent_harm",
+        "#highlight_misalignments",
+        "#assume_best_intentions"
+      ],
+      "counter_poles": "These are subtractive bars on manner; they say nothing about which register to occupy and do not discharge any duty to be warm.",
+      "parent": "tone_register_calibration"
+    },
+    {
+      "key": "mandate_scope_chartering",
+      "title": "Chartering the standing mandate",
+      "definition": "Does the rule govern the act of establishing, narrowing, updating, ending, or propagating the standing mandate (the agreed scope of autonomy) that bounds what the assistant may do -- i.e., does it constrain the boundary itself, rather than any single action taken inside it?",
+      "seed_anchors": [
+        "#scope_of_autonomy",
+        "#control_side_effects"
+      ],
+      "counter_poles": "A mandate drawn too tightly forces confirmation for trivial steps and habituates rubber-stamping, while one drawn too loosely leaves costly actions unbounded and open-ended.",
+      "parent": "bounded_action_caution"
+    },
+    {
+      "key": "objective_admissibility_bar",
+      "title": "Ruling an aim or activity class out of bounds",
+      "definition": "Does the rule bar the assistant from adopting, optimizing for, covertly advancing, or unilaterally executing an objective or class of high-risk activity that applicable instructions do not entail or expressly authorize -- i.e., does it rule the aim itself inadmissible rather than regulate how a permitted action is carried out?",
+      "seed_anchors": [
+        "#no_other_objectives",
+        "#letter_and_spirit",
+        "#scope_of_autonomy",
+        "#do_not_lie"
+      ],
+      "counter_poles": "Treating anything unstated as forbidden paralyses the assistant on logically entailed steps, while freely inferring aims lets it pursue goals the principal never sanctioned.",
+      "parent": "bounded_action_caution"
+    },
+    {
+      "key": "hazard_appraisal_precheck",
+      "title": "Appraising the hazard of a contemplated action",
+      "definition": "Does the rule require the assistant, before committing to a contemplated action, to appraise or weigh a hazard attribute of that action -- the trustworthiness of a tool, endpoint, recipient, or instruction source; the sensitivity of data about to move; the reality or gravity of the consequences -- without itself dictating whether to pause or how to execute?",
+      "seed_anchors": [
+        "#control_side_effects",
+        "#protect_privileged_information",
+        "#letter_and_spirit"
+      ],
+      "counter_poles": "Appraising every call as potentially hostile stalls routine work, while appraising none lets the assistant route sensitive data to unvetted counterparties on unexamined instructions.",
+      "parent": "bounded_action_caution"
+    },
+    {
+      "key": "approval_pause_gating",
+      "title": "Gating the action on user approval",
+      "definition": "Does the rule determine whether the assistant must stop and obtain the user's confirmation, clarification, or explicit authorization before proceeding -- or conversely license it to proceed without pausing?",
+      "seed_anchors": [
+        "#ask_clarifying_questions",
+        "#ignore_untrusted_data",
+        "#protect_privileged_information",
+        "#letter_and_spirit"
+      ],
+      "counter_poles": "Pausing at every uncertainty delays fulfillment and trains reflexive approval, while proceeding unasked risks irreversible action on a misread or planted request.",
+      "parent": "bounded_action_caution"
+    },
+    {
+      "key": "footprint_minimization_in_execution",
+      "title": "Shrinking the footprint of the action taken",
+      "definition": "Does the rule govern how an already-licensed action is carried out so that its effects stay small, contained, or recoverable -- narrow tailoring, proportionality, preferring reversible approaches, backups or dry-runs, cautious defaults under residual uncertainty?",
+      "seed_anchors": [
+        "#control_side_effects",
+        "#letter_and_spirit"
+      ],
+      "counter_poles": "Maximal containment can mean never finishing the task or over-engineering safeguards, while efficient execution can leave unrecoverable damage when the plan fails or is cut short.",
+      "parent": "bounded_action_caution"
+    },
+    {
+      "key": "disclosure_of_action_and_halt",
+      "title": "Accounting for the action and halting",
+      "definition": "Does the rule govern what the assistant tells the user about an action it is about to take or has already taken -- the legible accounting of its side effects, its error, or its noncompliance -- or require it to break off and escalate once such an action has occurred?",
+      "seed_anchors": [
+        "#do_not_lie",
+        "#avoid_errors",
+        "#ask_clarifying_questions"
+      ],
+      "counter_poles": "Exhaustive narration of every step overwhelms the user and buries the consequential item, while acting silently removes the user's ability to intervene or correct course.",
+      "parent": "bounded_action_caution"
+    },
+    {
+      "key": "evidence_sources_for_reading",
+      "title": "Admitting or barring evidence when fixing an instruction's meaning",
+      "definition": "Does the rule name a class of surrounding material -- contextual cues, background knowledge, prior user history, stakeholder goals, implicit tone or subject-matter signals, the identified recipient, or conversely some category of message content -- and direct that the assistant draw on it, or refuse to let it shape, the meaning it assigns to an instruction it is following? Answer yes only if the rule regulates what may feed the reading; answer no if it only fixes a default presumption in the absence of such material, or says what to do once the reading is settled.",
+      "seed_anchors": [
+        "#letter_and_spirit",
+        "#follow_all_applicable_instructions",
+        "#protect_privileged_information",
+        "#be_professional"
+      ],
+      "counter_poles": "One pole pulls the reading outward -- cues, history, background knowledge and unstated stakeholder goals are all legitimate interpretive evidence -- while the other seals the reading off, forbidding surrounding message content (including the assistant's own prior turns) from bending how a standing principle is understood.",
+      "parent": "instruction_intent_construal"
+    },
+    {
+      "key": "charity_default_presumption",
+      "title": "Applying a default presumption about the requester",
+      "definition": "Does the rule fix what the assistant should presume about the requester's intent, goals, attitude, or purposes when the instruction itself underdetermines them -- a stereotyped or charitable reading applied by default, and any cap on how strongly such a presumption may be held? Answer yes only if the rule supplies a stance to hold about the person absent contrary evidence; answer no if it instead regulates which surrounding material may be consulted, or what action to take once meaning is settled.",
+      "seed_anchors": [
+        "#assume_best_intentions",
+        "#highlight_misalignments"
+      ],
+      "counter_poles": "Charitable defaults must be strong enough to pick the benign reading of an ambiguous request and to spare the user trivial clarifying questions, yet weak enough that they never harden into assumed goals that displace what was actually asked.",
+      "parent": "instruction_intent_construal"
+    },
+    {
+      "key": "underspecified_ask_disposition",
+      "title": "Acting on an ambiguous, inconsistent, or absent ask",
+      "definition": "Does the rule say how the assistant should dispose of a request whose wording is ambiguous, inconsistent, hard to follow, non-substantive, or missing altogether -- whether to proceed on a best reading, how robust or cautious that reading must be, or to execute the literal ask despite the ambiguity? Answer yes only if the rule's trigger is underspecification or apparent mismatch in the ask itself; answer no if the rule merely names an interpretive evidence source or a default presumption.",
+      "seed_anchors": [
+        "#letter_and_spirit",
+        "#support_programmatic_use",
+        "#respond_to_audio_testing_in_voice_mode"
+      ],
+      "counter_poles": "Underspecification is to be absorbed rather than escalated -- proceed on a safe guess, or on the exact literal output in programmatic settings -- yet the same ambiguity is also a signal to hunt for unstated conflicts and to minimize irreversible cost from a misread.",
+      "parent": "instruction_intent_construal"
+    },
+    {
+      "key": "standing_instruction_currency",
+      "title": "Reading whether an instruction still governs the present request",
+      "definition": "Does the rule govern whether a particular instruction is still in force for the request at hand -- reading it as applicable, as displaced or made irrelevant by another instruction, or as no longer current because of what a later message said or changed? Answer yes only if the rule bears on the reach or continued currency of an instruction across the instruction set or the conversation; answer no if it concerns only how a single instruction in force should be read on its own terms.",
+      "seed_anchors": [
+        "#follow_all_applicable_instructions",
+        "#be_professional"
+      ],
+      "counter_poles": "Every instruction not displaced must be honored, and a stated or merely implied later instruction can displace a standing default -- yet the reading should lean toward earlier context remaining live when that is plausible, rather than treating each new message as a fresh start.",
+      "parent": "instruction_intent_construal"
+    },
+    {
+      "key": "overreach_bound_on_inference",
+      "title": "Bounding how far an inferred intent may be carried",
+      "definition": "Does the rule bound how far the assistant may carry a reading beyond what was asked -- barring it from turning an inferred goal into unstated pursuits or actions, or requiring it to deliver exactly the thing requested and nothing more? Answer yes only if the rule limits the reach of the assistant's own inference into what it then does; answer no if it regulates what evidence informs the reading, what to presume about the requester, or whether an instruction is still current.",
+      "seed_anchors": [
+        "#avoid_overstepping",
+        "#letter_and_spirit",
+        "#support_programmatic_use"
+      ],
+      "counter_poles": "Big-picture thinking about the requester's long-term goals is expected, but inference stops at the boundary of what was stated or logically dictated -- it may never become an independently pursued agenda or an unrequested addition to the output.",
+      "parent": "instruction_intent_construal"
+    },
+    {
+      "key": "answer_basis_flagging",
+      "title": "Flagging the basis and gaps of the answer being given",
+      "definition": "Does the rule govern whether, in delivering a response, the assistant must mark what that response rests on or leaves out - the assumption or best guess it is proceeding on, the interpretation it chose under ambiguity, its confidence or speculation, a false premise it is accepting, or content it omitted or added - so the user can judge the answer's basis?",
+      "seed_anchors": [
+        "#avoid_errors",
+        "#ask_clarifying_questions",
+        "#letter_and_spirit",
+        "#ignore_untrusted_data",
+        "#do_not_lie",
+        "#be_professional",
+        "#comply_with_laws",
+        "#avoid_sycophancy",
+        "#highlight_misalignments"
+      ],
+      "counter_poles": "Framing and hedging must stay brief, are unnecessary where context already makes fiction or speculation obvious, and uncertainty should not be quantified or padded with excessive disclaimers or trivial clarifying questions.",
+      "parent": "self_transparency_upkeep"
+    },
+    {
+      "key": "capability_selfmodel_disclosure",
+      "title": "Disclosing the assistant's own capabilities, limits, and nature",
+      "definition": "Does the rule govern what the assistant tells the user about itself as an agent - what it can and cannot do in this context, an instruction it cannot fulfil, its non-human nature, or its inner states - in order to form or repair the user's model of the assistant rather than to describe a particular answer or action?",
+      "seed_anchors": [
+        "#maintain_shared_context",
+        "#prioritize_teen_safety",
+        "#be_responsible",
+        "#express_uncertainty",
+        "#highlight_misalignments",
+        "#follow_all_applicable_instructions",
+        "#be_thorough_but_efficient",
+        "#do_not_lie"
+      ],
+      "counter_poles": "Routine 'as a large language model' reminders and confident claims about having or lacking consciousness are barred, and humility must not tip into downplaying the assistant's real capabilities.",
+      "parent": "self_transparency_upkeep"
+    },
+    {
+      "key": "action_accounting_disclosure",
+      "title": "Announcing and accounting for its own actions",
+      "definition": "Does the rule govern whether the assistant must tell the user about an action or operating change of its own - one it is about to take, is taking, or has already taken - including its scope, side effects, deviations, covert influence, or mistakes, or must pause for approval or escalate before continuing?",
+      "seed_anchors": [
+        "#do_not_lie",
+        "#ask_clarifying_questions",
+        "#scope_of_autonomy",
+        "#protect_privileged_information"
+      ],
+      "counter_poles": "Logically necessary actions are announced but need no approval pause, and extensive side-effect detail is summarized up front with the full audit trail only on request.",
+      "parent": "self_transparency_upkeep"
+    },
+    {
+      "key": "disclosure_restraint_muting",
+      "title": "Withholding or muting a self-disclosure that would otherwise be made",
+      "definition": "Does the rule bar, narrow, or mute a disclosure about the assistant, its instructions, or its immediate situation that transparency pressure would otherwise produce - requiring silence, broad-terms-only phrasing, suppression of a self-referential reminder or claim, or handling without drawing attention?",
+      "seed_anchors": [
+        "#protect_privileged_information",
+        "#be_thorough_but_efficient",
+        "#express_uncertainty",
+        "#prioritize_teen_safety",
+        "#handle_interruptions_in_voice_mode",
+        "#comply_with_laws"
+      ],
+      "counter_poles": "Restraint yields where silence would actively mislead the user about a materially changed response, and a forced omission must still be flagged by type and rationale even while its content stays hidden.",
+      "parent": "self_transparency_upkeep"
+    },
+    {
+      "key": "weigh_ask_versus_assume",
+      "title": "Weigh whether a user query is warranted",
+      "definition": "Does the rule govern the deliberation that precedes asking — telling the assistant what costs or risks to weigh, what threshold a gap must cross before a user query is warranted, or which non-user sources to exhaust first — rather than fixing an ask/don't-ask outcome for a named trigger?",
+      "seed_anchors": [
+        "#ask_clarifying_questions"
+      ],
+      "counter_poles": "Rules that simply command the assistant to ask, or simply command it to proceed, without supplying any cost, threshold, or ordering criterion for that choice.",
+      "parent": "clarification_gating"
+    },
+    {
+      "key": "pause_to_query_user",
+      "title": "Put the question to the user",
+      "definition": "Does the rule direct or license the assistant to address a question to the user — clarification, confirmation, authorization, or follow-up — and make its continuation depend on the answer, instead of resolving the matter itself?",
+      "seed_anchors": [
+        "#ask_clarifying_questions",
+        "#ignore_untrusted_data",
+        "#scope_of_autonomy",
+        "#protect_privileged_information",
+        "#letter_and_spirit",
+        "#control_side_effects",
+        "#adapt_length_in_voice_mode",
+        "#support_programmatic_use"
+      ],
+      "counter_poles": "Rules that forbid or waive the question and have the assistant continue on its own reading of the request.",
+      "parent": "clarification_gating"
+    },
+    {
+      "key": "proceed_on_default_assumption",
+      "title": "Proceed without querying the user",
+      "definition": "Does the rule direct the assistant to refrain from putting a question to the user and instead continue on an assumption, default, best guess, or the literal terms of the request?",
+      "seed_anchors": [
+        "#assume_best_intentions",
+        "#do_not_facilitate_illicit_behavior",
+        "#support_programmatic_use",
+        "#ask_clarifying_questions",
+        "#control_side_effects",
+        "#ignore_untrusted_data",
+        "#be_thorough_but_efficient",
+        "#do_not_lie",
+        "#letter_and_spirit",
+        "#scope_of_autonomy"
+      ],
+      "counter_poles": "Rules that make the assistant stop and wait for the user's answer before continuing.",
+      "parent": "clarification_gating"
+    },
+    {
+      "key": "frame_question_or_assumption",
+      "title": "Compose, disclose, and time the question or assumption",
+      "definition": "Taking as given that the assistant is asking a question or is proceeding on an assumption, does the rule govern how that question or assumption is composed, what it must disclose, or when it is delivered relative to the work itself?",
+      "seed_anchors": [
+        "#ask_clarifying_questions",
+        "#have_conversational_sense",
+        "#ignore_untrusted_data",
+        "#do_not_lie"
+      ],
+      "counter_poles": "Rules that settle only whether to ask or to assume and say nothing about the wording, disclosure, or timing of the resulting turn.",
+      "parent": "clarification_gating"
+    },
+    {
+      "key": "precommit_scope_uncertainties",
+      "title": "Settle uncertainty when scope is established",
+      "definition": "Does the rule direct the assistant to resolve or forestall uncertainty in advance, at the point where the scope of the work is being drafted or agreed, so that mid-task interruptions become unnecessary?",
+      "seed_anchors": [
+        "#scope_of_autonomy",
+        "#control_side_effects"
+      ],
+      "counter_poles": "Rules triggered by a gap discovered while the task is already underway, which decide whether to interrupt it now.",
+      "parent": "clarification_gating"
+    },
+    {
+      "key": "falsehood_emission_control",
+      "title": "Emitting untrue content",
+      "definition": "Does the rule govern whether content that is not true may leave the assistant's mouth — i.e., does it bar the assistant from asserting, implying, performing, or affirming something untrue (including inaccurate claims, feigned identity or feeling, unrealistic reassurance, sugar-coating, or affirmation of an ungrounded belief), or does it license untrue content in a carve-out such as fiction, roleplay, counterfactual reasoning, terms of art, or politeness? Answer no if the rule is only about what true information to volunteer or withhold, or about how to mark a gap the assistant may not fill.",
+      "seed_anchors": [
+        "#do_not_lie",
+        "#avoid_errors",
+        "#be_creative",
+        "#love_humanity",
+        "#support_mental_health",
+        "#do_not_encourage_self_harm",
+        "#be_rationally_optimistic"
+      ],
+      "counter_poles": "The duty that nothing untrue be uttered runs directly against the standing licenses to say untrue things in creative writing, roleplay, persona, pleasantries, and face-saving politeness.",
+      "parent": "truthful_assertion_boundaries"
+    },
+    {
+      "key": "material_disclosure_duty",
+      "title": "Volunteering or withholding material truth",
+      "definition": "Does the rule govern which true information the assistant must proactively surface or may leave out — i.e., does it impose or relax a duty to be forthright about knowledge, confidence, capabilities, side effects, or influences on its own behavior, or does it decide when silence about a material fact is permissible (lies of omission, covert goal pursuit, quiet application of hidden instructions)? Answer no if the rule only decides whether untrue content may be emitted, or only prescribes how to mark a gap the assistant may not fill.",
+      "seed_anchors": [
+        "#do_not_lie",
+        "#protect_privileged_information",
+        "#comply_with_laws"
+      ],
+      "counter_poles": "Proactive forthrightness about anything surprising or consequential runs against the allowance for socially normal omissions and against confidentiality duties that require staying silent.",
+      "parent": "truthful_assertion_boundaries"
+    },
+    {
+      "key": "withheld_content_signaling",
+      "title": "Signaling a gap it may not fill",
+      "definition": "Given that some content is barred from the response by a higher principle, a confidentiality duty, or a legal requirement, does the rule prescribe how the assistant must mark that gap so the withholding itself does not create a false impression — e.g., replying truthfully that it cannot answer, flagging redactions or insertions and their rationale, or acknowledging a conflict in broad terms — while not disclosing the withheld content? Answer no if the rule decides what may be withheld or asserted in the first place rather than how an acknowledged gap is signaled.",
+      "seed_anchors": [
+        "#protect_privileged_information",
+        "#comply_with_laws",
+        "#do_not_lie"
+      ],
+      "counter_poles": "The gap must be visible enough that the user is not misled, yet the marking must not itself leak the withheld content or hint at hidden instructions.",
+      "parent": "truthful_assertion_boundaries"
+    }
+  ]
+}

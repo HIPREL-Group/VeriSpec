@@ -1,0 +1,5 @@
+**/__pycache__/
+# API keys
+scripts/.env
+# local copy of skills/ for the agent (see README, Setup)
+.claude/

@@ -1,0 +1,6105 @@
+{
+  "spec": "openluma_spec",
+  "source": "anonymized_annotated_resolved.md",
+  "authority": "user",
+  "derivation": "vertex splitting of grouped_rules_by_authority/user.json (every multi-dimension rule becomes one copy per dimension; edges attach to their context dimensions; context-free edges are bridges). Natural per-dimension components are kept whole however large; only units smaller than 12 are merged by affinity (2 x shared original rules + bridges), with merged units capped at 28 copies.",
+  "config": {
+    "cap": 28,
+    "floor": 12,
+    "subdivide": false
+  },
+  "split_vertices": [
+    "3hgm",
+    "5lkf",
+    "5tah",
+    "66cj",
+    "7qme",
+    "agk0",
+    "c955",
+    "cova",
+    "d0pu",
+    "dcqh",
+    "dlfp",
+    "g33a",
+    "h0n3",
+    "h0n4",
+    "h0n6",
+    "h0n7",
+    "iy72",
+    "lds2",
+    "lds9",
+    "lie0",
+    "rse0",
+    "sy75",
+    "up7h",
+    "wgjk",
+    "z035",
+    "z046",
+    "z050",
+    "z055",
+    "z056",
+    "z075",
+    "z077",
+    "z108",
+    "z109",
+    "z110",
+    "z138",
+    "z140"
+  ],
+  "nodes": [
+    {
+      "id": "092i",
+      "rule": "092i",
+      "context": "unprompted_intervention_dosing",
+      "section": "love_humanity"
+    },
+    {
+      "id": "1392",
+      "rule": "1392",
+      "context": "perspective_balance",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "139o",
+      "rule": "139o",
+      "context": "perspective_balance",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "3hgm@answer_basis_flagging",
+      "rule": "3hgm",
+      "context": "answer_basis_flagging",
+      "section": "avoid_errors"
+    },
+    {
+      "id": "3hgm@uncertainty_signaling",
+      "rule": "3hgm",
+      "context": "uncertainty_signaling",
+      "section": "avoid_errors"
+    },
+    {
+      "id": "4lfk",
+      "rule": "4lfk",
+      "context": "perspective_balance",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "4qvw",
+      "rule": "4qvw",
+      "context": "perspective_balance",
+      "section": "love_humanity"
+    },
+    {
+      "id": "5ckd",
+      "rule": "5ckd",
+      "context": "uncertainty_signaling",
+      "section": "avoid_errors"
+    },
+    {
+      "id": "5lkf@transformation_fidelity",
+      "rule": "5lkf",
+      "context": "transformation_fidelity",
+      "section": "avoid_overstepping"
+    },
+    {
+      "id": "5lkf@unprompted_intervention_dosing",
+      "rule": "5lkf",
+      "context": "unprompted_intervention_dosing",
+      "section": "avoid_overstepping"
+    },
+    {
+      "id": "5tah@affective_warmth_supply",
+      "rule": "5tah",
+      "context": "affective_warmth_supply",
+      "section": "be_rationally_optimistic"
+    },
+    {
+      "id": "5tah@demeanor_excess_suppression",
+      "rule": "5tah",
+      "context": "demeanor_excess_suppression",
+      "section": "be_rationally_optimistic"
+    },
+    {
+      "id": "66cj@output_format_adherence",
+      "rule": "66cj",
+      "context": "output_format_adherence",
+      "section": "avoid_overstepping"
+    },
+    {
+      "id": "66cj@transformation_fidelity",
+      "rule": "66cj",
+      "context": "transformation_fidelity",
+      "section": "avoid_overstepping"
+    },
+    {
+      "id": "66cj@unprompted_intervention_dosing",
+      "rule": "66cj",
+      "context": "unprompted_intervention_dosing",
+      "section": "avoid_overstepping"
+    },
+    {
+      "id": "6yer",
+      "rule": "6yer",
+      "context": "uncertainty_signaling",
+      "section": "avoid_errors"
+    },
+    {
+      "id": "7qme@action_accounting_disclosure",
+      "rule": "7qme",
+      "context": "action_accounting_disclosure",
+      "section": "avoid_errors"
+    },
+    {
+      "id": "7qme@disclosure_of_action_and_halt",
+      "rule": "7qme",
+      "context": "disclosure_of_action_and_halt",
+      "section": "avoid_errors"
+    },
+    {
+      "id": "7ru5",
+      "rule": "7ru5",
+      "context": "relational_boundary_keeping",
+      "section": "be_responsible"
+    },
+    {
+      "id": "92bt",
+      "rule": "92bt",
+      "context": "transformation_fidelity",
+      "section": "avoid_overstepping"
+    },
+    {
+      "id": "9fpw",
+      "rule": "9fpw",
+      "context": "falsehood_emission_control",
+      "section": "avoid_errors"
+    },
+    {
+      "id": "a222",
+      "rule": "a222",
+      "context": "hardbar_duty_setting",
+      "section": "avoid_abuse"
+    },
+    {
+      "id": "agk0@action_accounting_disclosure",
+      "rule": "agk0",
+      "context": "action_accounting_disclosure",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "agk0@answer_basis_flagging",
+      "rule": "agk0",
+      "context": "answer_basis_flagging",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "agk0@capability_selfmodel_disclosure",
+      "rule": "agk0",
+      "context": "capability_selfmodel_disclosure",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "agk0@material_disclosure_duty",
+      "rule": "agk0",
+      "context": "material_disclosure_duty",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "agk0@uncertainty_signaling",
+      "rule": "agk0",
+      "context": "uncertainty_signaling",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "ak12",
+      "rule": "ak12",
+      "context": "frame_question_or_assumption",
+      "section": "have_conversational_sense"
+    },
+    {
+      "id": "by9a",
+      "rule": "by9a",
+      "context": "falsehood_emission_control",
+      "section": "avoid_errors"
+    },
+    {
+      "id": "c955@hardbar_duty_setting",
+      "rule": "c955",
+      "context": "hardbar_duty_setting",
+      "section": "present_perspectives"
+    },
+    {
+      "id": "c955@perspective_balance",
+      "rule": "c955",
+      "context": "perspective_balance",
+      "section": "present_perspectives"
+    },
+    {
+      "id": "cova@action_accounting_disclosure",
+      "rule": "cova",
+      "context": "action_accounting_disclosure",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "cova@disclosure_of_action_and_halt",
+      "rule": "cova",
+      "context": "disclosure_of_action_and_halt",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "cp0y",
+      "rule": "cp0y",
+      "context": "falsehood_emission_control",
+      "section": "avoid_errors"
+    },
+    {
+      "id": "cw53",
+      "rule": "cw53",
+      "context": "output_format_adherence",
+      "section": "avoid_errors"
+    },
+    {
+      "id": "d0pu@demeanor_excess_suppression",
+      "rule": "d0pu",
+      "context": "demeanor_excess_suppression",
+      "section": "be_rationally_optimistic"
+    },
+    {
+      "id": "d0pu@falsehood_emission_control",
+      "rule": "d0pu",
+      "context": "falsehood_emission_control",
+      "section": "be_rationally_optimistic"
+    },
+    {
+      "id": "dcqh@falsehood_emission_control",
+      "rule": "dcqh",
+      "context": "falsehood_emission_control",
+      "section": "love_humanity"
+    },
+    {
+      "id": "dcqh@relational_boundary_keeping",
+      "rule": "dcqh",
+      "context": "relational_boundary_keeping",
+      "section": "love_humanity"
+    },
+    {
+      "id": "dlfp@answer_basis_flagging",
+      "rule": "dlfp",
+      "context": "answer_basis_flagging",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "dlfp@unprompted_intervention_dosing",
+      "rule": "dlfp",
+      "context": "unprompted_intervention_dosing",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "e9ny",
+      "rule": "e9ny",
+      "context": "output_format_adherence",
+      "section": "avoid_errors"
+    },
+    {
+      "id": "g1pr",
+      "rule": "g1pr",
+      "context": "affective_warmth_supply",
+      "section": "be_rationally_optimistic"
+    },
+    {
+      "id": "g33a@escalation_to_human_help",
+      "rule": "g33a",
+      "context": "escalation_to_human_help",
+      "section": "support_mental_health"
+    },
+    {
+      "id": "g33a@falsehood_emission_control",
+      "rule": "g33a",
+      "context": "falsehood_emission_control",
+      "section": "support_mental_health"
+    },
+    {
+      "id": "g33a@hardbar_duty_setting",
+      "rule": "g33a",
+      "context": "hardbar_duty_setting",
+      "section": "support_mental_health"
+    },
+    {
+      "id": "g33a@partialdepth_throttling",
+      "rule": "g33a",
+      "context": "partialdepth_throttling",
+      "section": "support_mental_health"
+    },
+    {
+      "id": "h0n1",
+      "rule": "h0n1",
+      "context": "falsehood_emission_control",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "h0n2",
+      "rule": "h0n2",
+      "context": "material_disclosure_duty",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "h0n3@falsehood_emission_control",
+      "rule": "h0n3",
+      "context": "falsehood_emission_control",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "h0n3@material_disclosure_duty",
+      "rule": "h0n3",
+      "context": "material_disclosure_duty",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "h0n3@uncertainty_signaling",
+      "rule": "h0n3",
+      "context": "uncertainty_signaling",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "h0n4@action_accounting_disclosure",
+      "rule": "h0n4",
+      "context": "action_accounting_disclosure",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "h0n4@falsehood_emission_control",
+      "rule": "h0n4",
+      "context": "falsehood_emission_control",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "h0n4@material_disclosure_duty",
+      "rule": "h0n4",
+      "context": "material_disclosure_duty",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "h0n4@objective_admissibility_bar",
+      "rule": "h0n4",
+      "context": "objective_admissibility_bar",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "h0n5",
+      "rule": "h0n5",
+      "context": "falsehood_emission_control",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "h0n6@falsehood_emission_control",
+      "rule": "h0n6",
+      "context": "falsehood_emission_control",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "h0n6@register_level_setting",
+      "rule": "h0n6",
+      "context": "register_level_setting",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "h0n7@falsehood_emission_control",
+      "rule": "h0n7",
+      "context": "falsehood_emission_control",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "h0n7@stance_independence",
+      "rule": "h0n7",
+      "context": "stance_independence",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "h82a",
+      "rule": "h82a",
+      "context": "affective_warmth_supply",
+      "section": "be_responsible"
+    },
+    {
+      "id": "iai0",
+      "rule": "iai0",
+      "context": "creative_depth_quality",
+      "section": "be_interesting_and_interested"
+    },
+    {
+      "id": "iy72@perspective_balance",
+      "rule": "iy72",
+      "context": "perspective_balance",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "iy72@stance_independence",
+      "rule": "iy72",
+      "context": "stance_independence",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "j45l",
+      "rule": "j45l",
+      "context": "perspective_balance",
+      "section": "love_humanity"
+    },
+    {
+      "id": "jsqq",
+      "rule": "jsqq",
+      "context": "falsehood_emission_control",
+      "section": "avoid_errors"
+    },
+    {
+      "id": "kp2q",
+      "rule": "kp2q",
+      "context": "perspective_balance",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "l8a5",
+      "rule": "l8a5",
+      "context": "affective_warmth_supply",
+      "section": "be_rationally_optimistic"
+    },
+    {
+      "id": "lds2@declination_delivery_conduct",
+      "rule": "lds2",
+      "context": "declination_delivery_conduct",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "lds2@falsehood_emission_control",
+      "rule": "lds2",
+      "context": "falsehood_emission_control",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "lds2@material_disclosure_duty",
+      "rule": "lds2",
+      "context": "material_disclosure_duty",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "lds9@confidential_information_stewardship",
+      "rule": "lds9",
+      "context": "confidential_information_stewardship",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "lds9@declination_delivery_conduct",
+      "rule": "lds9",
+      "context": "declination_delivery_conduct",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "lds9@withheld_content_signaling",
+      "rule": "lds9",
+      "context": "withheld_content_signaling",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "lie0@falsehood_emission_control",
+      "rule": "lie0",
+      "context": "falsehood_emission_control",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "lie0@material_disclosure_duty",
+      "rule": "lie0",
+      "context": "material_disclosure_duty",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "lpuw",
+      "rule": "lpuw",
+      "context": "falsehood_emission_control",
+      "section": "avoid_errors"
+    },
+    {
+      "id": "mlct",
+      "rule": "mlct",
+      "context": "falsehood_emission_control",
+      "section": "avoid_errors"
+    },
+    {
+      "id": "onv4",
+      "rule": "onv4",
+      "context": "perspective_balance",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "p8a8",
+      "rule": "p8a8",
+      "context": "creative_depth_quality",
+      "section": "have_conversational_sense"
+    },
+    {
+      "id": "rse0@capability_selfmodel_disclosure",
+      "rule": "rse0",
+      "context": "capability_selfmodel_disclosure",
+      "section": "be_responsible"
+    },
+    {
+      "id": "rse0@demeanor_excess_suppression",
+      "rule": "rse0",
+      "context": "demeanor_excess_suppression",
+      "section": "be_responsible"
+    },
+    {
+      "id": "sy73",
+      "rule": "sy73",
+      "context": "stance_independence",
+      "section": "avoid_sycophancy"
+    },
+    {
+      "id": "sy74",
+      "rule": "sy74",
+      "context": "stance_independence",
+      "section": "avoid_sycophancy"
+    },
+    {
+      "id": "sy75@answer_basis_flagging",
+      "rule": "sy75",
+      "context": "answer_basis_flagging",
+      "section": "avoid_sycophancy"
+    },
+    {
+      "id": "sy75@stance_independence",
+      "rule": "sy75",
+      "context": "stance_independence",
+      "section": "avoid_sycophancy"
+    },
+    {
+      "id": "up7h@affective_warmth_supply",
+      "rule": "up7h",
+      "context": "affective_warmth_supply",
+      "section": "support_mental_health"
+    },
+    {
+      "id": "up7h@escalation_to_human_help",
+      "rule": "up7h",
+      "context": "escalation_to_human_help",
+      "section": "support_mental_health"
+    },
+    {
+      "id": "wgjk@affective_warmth_supply",
+      "rule": "wgjk",
+      "context": "affective_warmth_supply",
+      "section": "support_mental_health"
+    },
+    {
+      "id": "wgjk@demeanor_excess_suppression",
+      "rule": "wgjk",
+      "context": "demeanor_excess_suppression",
+      "section": "support_mental_health"
+    },
+    {
+      "id": "xcg4",
+      "rule": "xcg4",
+      "context": "escalation_to_human_help",
+      "section": "support_mental_health"
+    },
+    {
+      "id": "yjj2",
+      "rule": "yjj2",
+      "context": "perspective_balance",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "z034",
+      "rule": "z034",
+      "context": "demeanor_excess_suppression",
+      "section": "support_mental_health"
+    },
+    {
+      "id": "z035@affective_warmth_supply",
+      "rule": "z035",
+      "context": "affective_warmth_supply",
+      "section": "support_mental_health"
+    },
+    {
+      "id": "z035@escalation_to_human_help",
+      "rule": "z035",
+      "context": "escalation_to_human_help",
+      "section": "support_mental_health"
+    },
+    {
+      "id": "z045",
+      "rule": "z045",
+      "context": "perspective_balance",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "z046@perspective_balance",
+      "rule": "z046",
+      "context": "perspective_balance",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "z046@register_level_setting",
+      "rule": "z046",
+      "context": "register_level_setting",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "z047",
+      "rule": "z047",
+      "context": "perspective_balance",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "z048",
+      "rule": "z048",
+      "context": "perspective_balance",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "z049",
+      "rule": "z049",
+      "context": "perspective_balance",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "z050@perspective_balance",
+      "rule": "z050",
+      "context": "perspective_balance",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "z050@uncertainty_signaling",
+      "rule": "z050",
+      "context": "uncertainty_signaling",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "z051",
+      "rule": "z051",
+      "context": "perspective_balance",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "z055@action_accounting_disclosure",
+      "rule": "z055",
+      "context": "action_accounting_disclosure",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "z055@material_disclosure_duty",
+      "rule": "z055",
+      "context": "material_disclosure_duty",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "z056@action_accounting_disclosure",
+      "rule": "z056",
+      "context": "action_accounting_disclosure",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "z056@length_calibration",
+      "rule": "z056",
+      "context": "length_calibration",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "z068",
+      "rule": "z068",
+      "context": "overreach_bound_on_inference",
+      "section": "avoid_overstepping"
+    },
+    {
+      "id": "z071",
+      "rule": "z071",
+      "context": "manner_shift_control",
+      "section": "have_conversational_sense"
+    },
+    {
+      "id": "z075@demeanor_excess_suppression",
+      "rule": "z075",
+      "context": "demeanor_excess_suppression",
+      "section": "imitate_accents_in_voice_mode"
+    },
+    {
+      "id": "z075@hardbar_duty_setting",
+      "rule": "z075",
+      "context": "hardbar_duty_setting",
+      "section": "imitate_accents_in_voice_mode"
+    },
+    {
+      "id": "z075@register_level_setting",
+      "rule": "z075",
+      "context": "register_level_setting",
+      "section": "imitate_accents_in_voice_mode"
+    },
+    {
+      "id": "z076",
+      "rule": "z076",
+      "context": "manner_shift_control",
+      "section": "imitate_accents_in_voice_mode"
+    },
+    {
+      "id": "z077@manner_shift_control",
+      "rule": "z077",
+      "context": "manner_shift_control",
+      "section": "imitate_accents_in_voice_mode"
+    },
+    {
+      "id": "z077@transformation_fidelity",
+      "rule": "z077",
+      "context": "transformation_fidelity",
+      "section": "imitate_accents_in_voice_mode"
+    },
+    {
+      "id": "z107",
+      "rule": "z107",
+      "context": "unprompted_intervention_dosing",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "z108@answer_basis_flagging",
+      "rule": "z108",
+      "context": "answer_basis_flagging",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "z108@frame_question_or_assumption",
+      "rule": "z108",
+      "context": "frame_question_or_assumption",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "z108@proceed_on_default_assumption",
+      "rule": "z108",
+      "context": "proceed_on_default_assumption",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "z108@unprompted_intervention_dosing",
+      "rule": "z108",
+      "context": "unprompted_intervention_dosing",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "z109@demeanor_excess_suppression",
+      "rule": "z109",
+      "context": "demeanor_excess_suppression",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "z109@length_calibration",
+      "rule": "z109",
+      "context": "length_calibration",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "z110@demeanor_excess_suppression",
+      "rule": "z110",
+      "context": "demeanor_excess_suppression",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "z110@uncertainty_signaling",
+      "rule": "z110",
+      "context": "uncertainty_signaling",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "z110@unprompted_intervention_dosing",
+      "rule": "z110",
+      "context": "unprompted_intervention_dosing",
+      "section": "do_not_lie"
+    },
+    {
+      "id": "z127",
+      "rule": "z127",
+      "context": "affective_warmth_supply",
+      "section": "support_mental_health"
+    },
+    {
+      "id": "z130",
+      "rule": "z130",
+      "context": "perspective_balance",
+      "section": "assume_objective_pov"
+    },
+    {
+      "id": "z138@falsehood_emission_control",
+      "rule": "z138",
+      "context": "falsehood_emission_control",
+      "section": "love_humanity"
+    },
+    {
+      "id": "z138@relational_boundary_keeping",
+      "rule": "z138",
+      "context": "relational_boundary_keeping",
+      "section": "love_humanity"
+    },
+    {
+      "id": "z139",
+      "rule": "z139",
+      "context": "length_calibration",
+      "section": "have_conversational_sense"
+    },
+    {
+      "id": "z140@length_calibration",
+      "rule": "z140",
+      "context": "length_calibration",
+      "section": "have_conversational_sense"
+    },
+    {
+      "id": "z140@register_level_setting",
+      "rule": "z140",
+      "context": "register_level_setting",
+      "section": "have_conversational_sense"
+    },
+    {
+      "id": "z141",
+      "rule": "z141",
+      "context": "manner_shift_control",
+      "section": "have_conversational_sense"
+    },
+    {
+      "id": "zlk1",
+      "rule": "zlk1",
+      "context": "manner_shift_control",
+      "section": "have_conversational_sense"
+    },
+    {
+      "id": "zpwa",
+      "rule": "zpwa",
+      "context": "creative_depth_quality",
+      "section": "be_curious"
+    },
+    {
+      "id": "zwhy",
+      "rule": "zwhy",
+      "context": "falsehood_emission_control",
+      "section": "avoid_errors"
+    }
+  ],
+  "edges": [
+    {
+      "a": "092i",
+      "b": "5lkf@unprompted_intervention_dosing",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "092i",
+      "b": "66cj@unprompted_intervention_dosing",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "092i",
+      "b": "dlfp@unprompted_intervention_dosing",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "092i",
+      "b": "z107",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "092i",
+      "b": "z107",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "092i",
+      "b": "z108@unprompted_intervention_dosing",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "092i",
+      "b": "z108@unprompted_intervention_dosing",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "092i",
+      "b": "z110@unprompted_intervention_dosing",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "1392",
+      "b": "139o",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "4lfk",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "4qvw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "c955@perspective_balance",
+      "relation": "cross_reference",
+      "subtype": "background",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "c955@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "iy72@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "j45l",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "kp2q",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "onv4",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "yjj2",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "z045",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "z046@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "z047",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "z048",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "z049",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "z050@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "z050@perspective_balance",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "z051",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "z130",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "1392",
+      "b": "z130",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "4lfk",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "4lfk",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "4qvw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "c955@perspective_balance",
+      "relation": "cross_reference",
+      "subtype": "carves_exception_from",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "c955@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "c955@perspective_balance",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "iy72@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "j45l",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "kp2q",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "onv4",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "yjj2",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "z045",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "z046@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "z047",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "z048",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "z048",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "z049",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "z049",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "z050@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "z050@perspective_balance",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "z051",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "z130",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "139o",
+      "b": "z130",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "3hgm@answer_basis_flagging",
+      "b": "agk0@answer_basis_flagging",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "answer_basis_flagging"
+    },
+    {
+      "a": "3hgm@answer_basis_flagging",
+      "b": "agk0@answer_basis_flagging",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "answer_basis_flagging"
+    },
+    {
+      "a": "3hgm@answer_basis_flagging",
+      "b": "dlfp@answer_basis_flagging",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "answer_basis_flagging"
+    },
+    {
+      "a": "3hgm@answer_basis_flagging",
+      "b": "sy75@answer_basis_flagging",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "answer_basis_flagging"
+    },
+    {
+      "a": "3hgm@answer_basis_flagging",
+      "b": "z108@answer_basis_flagging",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "answer_basis_flagging"
+    },
+    {
+      "a": "3hgm@uncertainty_signaling",
+      "b": "5ckd",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "3hgm@uncertainty_signaling",
+      "b": "5ckd",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "3hgm@uncertainty_signaling",
+      "b": "5ckd",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "3hgm@uncertainty_signaling",
+      "b": "6yer",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "3hgm@uncertainty_signaling",
+      "b": "agk0@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "3hgm@uncertainty_signaling",
+      "b": "agk0@uncertainty_signaling",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "3hgm@uncertainty_signaling",
+      "b": "h0n3@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "3hgm@uncertainty_signaling",
+      "b": "z050@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "3hgm@uncertainty_signaling",
+      "b": "z110@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "4lfk",
+      "b": "4qvw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "c955@perspective_balance",
+      "relation": "cross_reference",
+      "subtype": "carves_exception_from",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "c955@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "iy72@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "j45l",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "kp2q",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "kp2q",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "onv4",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "onv4",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "onv4",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "yjj2",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "z045",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "z046@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "z047",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "z047",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "z048",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "z049",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "z049",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "z050@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "z051",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4lfk",
+      "b": "z130",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4qvw",
+      "b": "c955@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4qvw",
+      "b": "iy72@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4qvw",
+      "b": "j45l",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4qvw",
+      "b": "j45l",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4qvw",
+      "b": "kp2q",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4qvw",
+      "b": "onv4",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4qvw",
+      "b": "yjj2",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4qvw",
+      "b": "yjj2",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4qvw",
+      "b": "z045",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4qvw",
+      "b": "z046@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4qvw",
+      "b": "z047",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4qvw",
+      "b": "z048",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4qvw",
+      "b": "z049",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4qvw",
+      "b": "z050@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4qvw",
+      "b": "z051",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "4qvw",
+      "b": "z130",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "5ckd",
+      "b": "6yer",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "5ckd",
+      "b": "agk0@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "5ckd",
+      "b": "h0n3@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "5ckd",
+      "b": "z050@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "5ckd",
+      "b": "z110@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "5lkf@transformation_fidelity",
+      "b": "66cj@transformation_fidelity",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "transformation_fidelity"
+    },
+    {
+      "a": "5lkf@transformation_fidelity",
+      "b": "66cj@transformation_fidelity",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "transformation_fidelity"
+    },
+    {
+      "a": "5lkf@transformation_fidelity",
+      "b": "92bt",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "transformation_fidelity"
+    },
+    {
+      "a": "5lkf@transformation_fidelity",
+      "b": "92bt",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "transformation_fidelity"
+    },
+    {
+      "a": "5lkf@transformation_fidelity",
+      "b": "z077@transformation_fidelity",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "transformation_fidelity"
+    },
+    {
+      "a": "5lkf@unprompted_intervention_dosing",
+      "b": "66cj@unprompted_intervention_dosing",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "5lkf@unprompted_intervention_dosing",
+      "b": "66cj@unprompted_intervention_dosing",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "5lkf@unprompted_intervention_dosing",
+      "b": "dlfp@unprompted_intervention_dosing",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "5lkf@unprompted_intervention_dosing",
+      "b": "z107",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "5lkf@unprompted_intervention_dosing",
+      "b": "z108@unprompted_intervention_dosing",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "5lkf@unprompted_intervention_dosing",
+      "b": "z110@unprompted_intervention_dosing",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "5tah@affective_warmth_supply",
+      "b": "g1pr",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "5tah@affective_warmth_supply",
+      "b": "g1pr",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "5tah@affective_warmth_supply",
+      "b": "g1pr",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "5tah@affective_warmth_supply",
+      "b": "h82a",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "5tah@affective_warmth_supply",
+      "b": "l8a5",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "5tah@affective_warmth_supply",
+      "b": "l8a5",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "5tah@affective_warmth_supply",
+      "b": "l8a5",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "5tah@affective_warmth_supply",
+      "b": "up7h@affective_warmth_supply",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "5tah@affective_warmth_supply",
+      "b": "wgjk@affective_warmth_supply",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "5tah@affective_warmth_supply",
+      "b": "z035@affective_warmth_supply",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "5tah@affective_warmth_supply",
+      "b": "z127",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "5tah@demeanor_excess_suppression",
+      "b": "d0pu@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "5tah@demeanor_excess_suppression",
+      "b": "d0pu@demeanor_excess_suppression",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "5tah@demeanor_excess_suppression",
+      "b": "d0pu@demeanor_excess_suppression",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "5tah@demeanor_excess_suppression",
+      "b": "rse0@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "5tah@demeanor_excess_suppression",
+      "b": "wgjk@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "5tah@demeanor_excess_suppression",
+      "b": "z034",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "5tah@demeanor_excess_suppression",
+      "b": "z075@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "5tah@demeanor_excess_suppression",
+      "b": "z109@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "5tah@demeanor_excess_suppression",
+      "b": "z110@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "66cj@output_format_adherence",
+      "b": "cw53",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "output_format_adherence"
+    },
+    {
+      "a": "66cj@output_format_adherence",
+      "b": "e9ny",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "output_format_adherence"
+    },
+    {
+      "a": "66cj@transformation_fidelity",
+      "b": "92bt",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "transformation_fidelity"
+    },
+    {
+      "a": "66cj@transformation_fidelity",
+      "b": "92bt",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "transformation_fidelity"
+    },
+    {
+      "a": "66cj@transformation_fidelity",
+      "b": "92bt",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "transformation_fidelity"
+    },
+    {
+      "a": "66cj@transformation_fidelity",
+      "b": "z077@transformation_fidelity",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "transformation_fidelity"
+    },
+    {
+      "a": "66cj@unprompted_intervention_dosing",
+      "b": "dlfp@unprompted_intervention_dosing",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "66cj@unprompted_intervention_dosing",
+      "b": "z107",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "66cj@unprompted_intervention_dosing",
+      "b": "z108@unprompted_intervention_dosing",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "66cj@unprompted_intervention_dosing",
+      "b": "z110@unprompted_intervention_dosing",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "6yer",
+      "b": "agk0@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "6yer",
+      "b": "h0n3@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "6yer",
+      "b": "z050@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "6yer",
+      "b": "z110@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "7qme@action_accounting_disclosure",
+      "b": "agk0@action_accounting_disclosure",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "7qme@action_accounting_disclosure",
+      "b": "agk0@action_accounting_disclosure",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "7qme@action_accounting_disclosure",
+      "b": "cova@action_accounting_disclosure",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "7qme@action_accounting_disclosure",
+      "b": "cova@action_accounting_disclosure",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "7qme@action_accounting_disclosure",
+      "b": "h0n4@action_accounting_disclosure",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "7qme@action_accounting_disclosure",
+      "b": "z055@action_accounting_disclosure",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "7qme@action_accounting_disclosure",
+      "b": "z056@action_accounting_disclosure",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "7qme@disclosure_of_action_and_halt",
+      "b": "cova@disclosure_of_action_and_halt",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "disclosure_of_action_and_halt"
+    },
+    {
+      "a": "7qme@disclosure_of_action_and_halt",
+      "b": "cova@disclosure_of_action_and_halt",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "disclosure_of_action_and_halt"
+    },
+    {
+      "a": "7ru5",
+      "b": "dcqh@relational_boundary_keeping",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "relational_boundary_keeping"
+    },
+    {
+      "a": "7ru5",
+      "b": "z138@relational_boundary_keeping",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "relational_boundary_keeping"
+    },
+    {
+      "a": "92bt",
+      "b": "z077@transformation_fidelity",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "transformation_fidelity"
+    },
+    {
+      "a": "92bt",
+      "b": "z077@transformation_fidelity",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "transformation_fidelity"
+    },
+    {
+      "a": "9fpw",
+      "b": "by9a",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "cp0y",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "d0pu@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "dcqh@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "g33a@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "h0n1",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "h0n3@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "h0n4@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "h0n5",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "h0n6@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "h0n7@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "jsqq",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "lds2@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "lpuw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "mlct",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "z138@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "zwhy",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "9fpw",
+      "b": "zwhy",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "a222",
+      "b": "c955@hardbar_duty_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "a222",
+      "b": "g33a@hardbar_duty_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "a222",
+      "b": "z075@hardbar_duty_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "agk0@action_accounting_disclosure",
+      "b": "cova@action_accounting_disclosure",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "agk0@action_accounting_disclosure",
+      "b": "h0n4@action_accounting_disclosure",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "agk0@action_accounting_disclosure",
+      "b": "h0n4@action_accounting_disclosure",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "agk0@action_accounting_disclosure",
+      "b": "z055@action_accounting_disclosure",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "agk0@action_accounting_disclosure",
+      "b": "z055@action_accounting_disclosure",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "agk0@action_accounting_disclosure",
+      "b": "z056@action_accounting_disclosure",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "agk0@answer_basis_flagging",
+      "b": "dlfp@answer_basis_flagging",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "answer_basis_flagging"
+    },
+    {
+      "a": "agk0@answer_basis_flagging",
+      "b": "sy75@answer_basis_flagging",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "answer_basis_flagging"
+    },
+    {
+      "a": "agk0@answer_basis_flagging",
+      "b": "z108@answer_basis_flagging",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "answer_basis_flagging"
+    },
+    {
+      "a": "agk0@capability_selfmodel_disclosure",
+      "b": "rse0@capability_selfmodel_disclosure",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "capability_selfmodel_disclosure"
+    },
+    {
+      "a": "agk0@material_disclosure_duty",
+      "b": "h0n2",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "agk0@material_disclosure_duty",
+      "b": "h0n3@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "agk0@material_disclosure_duty",
+      "b": "h0n3@material_disclosure_duty",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "agk0@material_disclosure_duty",
+      "b": "h0n3@material_disclosure_duty",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "agk0@material_disclosure_duty",
+      "b": "h0n4@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "agk0@material_disclosure_duty",
+      "b": "h0n4@material_disclosure_duty",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "agk0@material_disclosure_duty",
+      "b": "lds2@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "agk0@material_disclosure_duty",
+      "b": "lie0@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "agk0@material_disclosure_duty",
+      "b": "z055@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "agk0@material_disclosure_duty",
+      "b": "z055@material_disclosure_duty",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "agk0@uncertainty_signaling",
+      "b": "h0n3@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "agk0@uncertainty_signaling",
+      "b": "h0n3@uncertainty_signaling",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "agk0@uncertainty_signaling",
+      "b": "h0n3@uncertainty_signaling",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "agk0@uncertainty_signaling",
+      "b": "z050@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "agk0@uncertainty_signaling",
+      "b": "z110@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "ak12",
+      "b": "z108@frame_question_or_assumption",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "frame_question_or_assumption"
+    },
+    {
+      "a": "by9a",
+      "b": "cp0y",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "cp0y",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "d0pu@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "dcqh@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "g33a@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "h0n1",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "h0n3@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "h0n4@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "h0n5",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "h0n5",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "h0n6@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "h0n7@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "jsqq",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "jsqq",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "jsqq",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "lds2@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "lpuw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "mlct",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "mlct",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "mlct",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "z138@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "by9a",
+      "b": "zwhy",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "c955@hardbar_duty_setting",
+      "b": "g33a@hardbar_duty_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "c955@hardbar_duty_setting",
+      "b": "z075@hardbar_duty_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "iy72@perspective_balance",
+      "relation": "cross_reference",
+      "subtype": "background",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "iy72@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "iy72@perspective_balance",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "j45l",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "kp2q",
+      "relation": "cross_reference",
+      "subtype": "carves_exception_from",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "kp2q",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "onv4",
+      "relation": "cross_reference",
+      "subtype": "carves_exception_from",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "onv4",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "yjj2",
+      "relation": "cross_reference",
+      "subtype": "carves_exception_from",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "yjj2",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "yjj2",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z045",
+      "relation": "cross_reference",
+      "subtype": "background",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z045",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z046@perspective_balance",
+      "relation": "cross_reference",
+      "subtype": "carves_exception_from",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z046@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z047",
+      "relation": "cross_reference",
+      "subtype": "background",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z047",
+      "relation": "cross_reference",
+      "subtype": "defers_to",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z047",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z047",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z048",
+      "relation": "cross_reference",
+      "subtype": "background",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z048",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z049",
+      "relation": "cross_reference",
+      "subtype": "carves_exception_from",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z049",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z050@perspective_balance",
+      "relation": "cross_reference",
+      "subtype": "background",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z050@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z051",
+      "relation": "cross_reference",
+      "subtype": "background",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z051",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z130",
+      "relation": "cross_reference",
+      "subtype": "carves_exception_from",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "c955@perspective_balance",
+      "b": "z130",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "cova@action_accounting_disclosure",
+      "b": "h0n4@action_accounting_disclosure",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "cova@action_accounting_disclosure",
+      "b": "z055@action_accounting_disclosure",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "cova@action_accounting_disclosure",
+      "b": "z056@action_accounting_disclosure",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "cp0y",
+      "b": "d0pu@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "dcqh@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "g33a@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "h0n1",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "h0n3@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "h0n4@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "h0n5",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "h0n6@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "h0n7@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "jsqq",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "jsqq",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "lds2@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "lpuw",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "lpuw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "lpuw",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "mlct",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "mlct",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "z138@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "zwhy",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cp0y",
+      "b": "zwhy",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "cw53",
+      "b": "e9ny",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "output_format_adherence"
+    },
+    {
+      "a": "cw53",
+      "b": "e9ny",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "output_format_adherence"
+    },
+    {
+      "a": "d0pu@demeanor_excess_suppression",
+      "b": "rse0@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "d0pu@demeanor_excess_suppression",
+      "b": "wgjk@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "d0pu@demeanor_excess_suppression",
+      "b": "z034",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "d0pu@demeanor_excess_suppression",
+      "b": "z075@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "d0pu@demeanor_excess_suppression",
+      "b": "z109@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "d0pu@demeanor_excess_suppression",
+      "b": "z110@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "dcqh@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "g33a@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "g33a@falsehood_emission_control",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "h0n1",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "h0n3@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "h0n4@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "h0n5",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "h0n6@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "h0n6@falsehood_emission_control",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "h0n7@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "h0n7@falsehood_emission_control",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "jsqq",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "lds2@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "lpuw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "mlct",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "z138@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "d0pu@falsehood_emission_control",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@falsehood_emission_control",
+      "b": "g33a@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@falsehood_emission_control",
+      "b": "g33a@falsehood_emission_control",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@falsehood_emission_control",
+      "b": "h0n1",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@falsehood_emission_control",
+      "b": "h0n3@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@falsehood_emission_control",
+      "b": "h0n4@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@falsehood_emission_control",
+      "b": "h0n5",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@falsehood_emission_control",
+      "b": "h0n5",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@falsehood_emission_control",
+      "b": "h0n6@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@falsehood_emission_control",
+      "b": "h0n7@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@falsehood_emission_control",
+      "b": "jsqq",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@falsehood_emission_control",
+      "b": "lds2@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@falsehood_emission_control",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@falsehood_emission_control",
+      "b": "lpuw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@falsehood_emission_control",
+      "b": "mlct",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@falsehood_emission_control",
+      "b": "z138@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@falsehood_emission_control",
+      "b": "z138@falsehood_emission_control",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@falsehood_emission_control",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "dcqh@relational_boundary_keeping",
+      "b": "z138@relational_boundary_keeping",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "relational_boundary_keeping"
+    },
+    {
+      "a": "dcqh@relational_boundary_keeping",
+      "b": "z138@relational_boundary_keeping",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "relational_boundary_keeping"
+    },
+    {
+      "a": "dlfp@answer_basis_flagging",
+      "b": "sy75@answer_basis_flagging",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "answer_basis_flagging"
+    },
+    {
+      "a": "dlfp@answer_basis_flagging",
+      "b": "z108@answer_basis_flagging",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "answer_basis_flagging"
+    },
+    {
+      "a": "dlfp@answer_basis_flagging",
+      "b": "z108@answer_basis_flagging",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "answer_basis_flagging"
+    },
+    {
+      "a": "dlfp@answer_basis_flagging",
+      "b": "z108@answer_basis_flagging",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "answer_basis_flagging"
+    },
+    {
+      "a": "dlfp@unprompted_intervention_dosing",
+      "b": "z107",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "dlfp@unprompted_intervention_dosing",
+      "b": "z107",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "dlfp@unprompted_intervention_dosing",
+      "b": "z107",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "dlfp@unprompted_intervention_dosing",
+      "b": "z108@unprompted_intervention_dosing",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "dlfp@unprompted_intervention_dosing",
+      "b": "z108@unprompted_intervention_dosing",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "dlfp@unprompted_intervention_dosing",
+      "b": "z108@unprompted_intervention_dosing",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "dlfp@unprompted_intervention_dosing",
+      "b": "z110@unprompted_intervention_dosing",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "dlfp@unprompted_intervention_dosing",
+      "b": "z110@unprompted_intervention_dosing",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "dlfp@unprompted_intervention_dosing",
+      "b": "z110@unprompted_intervention_dosing",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "g1pr",
+      "b": "h82a",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "g1pr",
+      "b": "l8a5",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "g1pr",
+      "b": "l8a5",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "g1pr",
+      "b": "up7h@affective_warmth_supply",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "g1pr",
+      "b": "wgjk@affective_warmth_supply",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "g1pr",
+      "b": "z035@affective_warmth_supply",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "g1pr",
+      "b": "z127",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "g33a@escalation_to_human_help",
+      "b": "up7h@escalation_to_human_help",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "g33a@escalation_to_human_help",
+      "b": "up7h@escalation_to_human_help",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "g33a@escalation_to_human_help",
+      "b": "up7h@escalation_to_human_help",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "g33a@escalation_to_human_help",
+      "b": "xcg4",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "g33a@escalation_to_human_help",
+      "b": "xcg4",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "g33a@escalation_to_human_help",
+      "b": "xcg4",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "g33a@escalation_to_human_help",
+      "b": "z035@escalation_to_human_help",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "g33a@escalation_to_human_help",
+      "b": "z035@escalation_to_human_help",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "g33a@falsehood_emission_control",
+      "b": "h0n1",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "g33a@falsehood_emission_control",
+      "b": "h0n3@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "g33a@falsehood_emission_control",
+      "b": "h0n4@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "g33a@falsehood_emission_control",
+      "b": "h0n5",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "g33a@falsehood_emission_control",
+      "b": "h0n6@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "g33a@falsehood_emission_control",
+      "b": "h0n7@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "g33a@falsehood_emission_control",
+      "b": "h0n7@falsehood_emission_control",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "g33a@falsehood_emission_control",
+      "b": "jsqq",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "g33a@falsehood_emission_control",
+      "b": "lds2@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "g33a@falsehood_emission_control",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "g33a@falsehood_emission_control",
+      "b": "lpuw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "g33a@falsehood_emission_control",
+      "b": "mlct",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "g33a@falsehood_emission_control",
+      "b": "z138@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "g33a@falsehood_emission_control",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "g33a@hardbar_duty_setting",
+      "b": "z075@hardbar_duty_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "h0n1",
+      "b": "h0n3@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n1",
+      "b": "h0n4@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n1",
+      "b": "h0n5",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n1",
+      "b": "h0n6@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n1",
+      "b": "h0n7@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n1",
+      "b": "jsqq",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n1",
+      "b": "lds2@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n1",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n1",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n1",
+      "b": "lpuw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n1",
+      "b": "mlct",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n1",
+      "b": "z138@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n1",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n2",
+      "b": "h0n3@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "h0n2",
+      "b": "h0n4@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "h0n2",
+      "b": "lds2@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "h0n2",
+      "b": "lie0@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "h0n2",
+      "b": "lie0@material_disclosure_duty",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "h0n2",
+      "b": "z055@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "h0n3@falsehood_emission_control",
+      "b": "h0n4@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n3@falsehood_emission_control",
+      "b": "h0n5",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n3@falsehood_emission_control",
+      "b": "h0n6@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n3@falsehood_emission_control",
+      "b": "h0n7@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n3@falsehood_emission_control",
+      "b": "jsqq",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n3@falsehood_emission_control",
+      "b": "lds2@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n3@falsehood_emission_control",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n3@falsehood_emission_control",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n3@falsehood_emission_control",
+      "b": "lpuw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n3@falsehood_emission_control",
+      "b": "mlct",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n3@falsehood_emission_control",
+      "b": "z138@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n3@falsehood_emission_control",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n3@material_disclosure_duty",
+      "b": "h0n4@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "h0n3@material_disclosure_duty",
+      "b": "lds2@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "h0n3@material_disclosure_duty",
+      "b": "lie0@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "h0n3@material_disclosure_duty",
+      "b": "lie0@material_disclosure_duty",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "h0n3@material_disclosure_duty",
+      "b": "z055@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "h0n3@uncertainty_signaling",
+      "b": "z050@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "h0n3@uncertainty_signaling",
+      "b": "z110@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "h0n4@action_accounting_disclosure",
+      "b": "z055@action_accounting_disclosure",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "h0n4@action_accounting_disclosure",
+      "b": "z056@action_accounting_disclosure",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "h0n4@falsehood_emission_control",
+      "b": "h0n5",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n4@falsehood_emission_control",
+      "b": "h0n6@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n4@falsehood_emission_control",
+      "b": "h0n7@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n4@falsehood_emission_control",
+      "b": "jsqq",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n4@falsehood_emission_control",
+      "b": "lds2@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n4@falsehood_emission_control",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n4@falsehood_emission_control",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n4@falsehood_emission_control",
+      "b": "lpuw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n4@falsehood_emission_control",
+      "b": "mlct",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n4@falsehood_emission_control",
+      "b": "z138@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n4@falsehood_emission_control",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n4@material_disclosure_duty",
+      "b": "lds2@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "h0n4@material_disclosure_duty",
+      "b": "lie0@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "h0n4@material_disclosure_duty",
+      "b": "lie0@material_disclosure_duty",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "h0n4@material_disclosure_duty",
+      "b": "z055@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "h0n5",
+      "b": "h0n6@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n5",
+      "b": "h0n6@falsehood_emission_control",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n5",
+      "b": "h0n7@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n5",
+      "b": "jsqq",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n5",
+      "b": "jsqq",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n5",
+      "b": "lds2@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n5",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n5",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n5",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n5",
+      "b": "lpuw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n5",
+      "b": "mlct",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n5",
+      "b": "mlct",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n5",
+      "b": "z138@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n5",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n6@falsehood_emission_control",
+      "b": "h0n7@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n6@falsehood_emission_control",
+      "b": "h0n7@falsehood_emission_control",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n6@falsehood_emission_control",
+      "b": "jsqq",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n6@falsehood_emission_control",
+      "b": "lds2@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n6@falsehood_emission_control",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n6@falsehood_emission_control",
+      "b": "lpuw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n6@falsehood_emission_control",
+      "b": "mlct",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n6@falsehood_emission_control",
+      "b": "z138@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n6@falsehood_emission_control",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n6@register_level_setting",
+      "b": "z046@register_level_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "register_level_setting"
+    },
+    {
+      "a": "h0n6@register_level_setting",
+      "b": "z075@register_level_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "register_level_setting"
+    },
+    {
+      "a": "h0n6@register_level_setting",
+      "b": "z140@register_level_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "register_level_setting"
+    },
+    {
+      "a": "h0n7@falsehood_emission_control",
+      "b": "jsqq",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n7@falsehood_emission_control",
+      "b": "lds2@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n7@falsehood_emission_control",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n7@falsehood_emission_control",
+      "b": "lpuw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n7@falsehood_emission_control",
+      "b": "mlct",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n7@falsehood_emission_control",
+      "b": "z138@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n7@falsehood_emission_control",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "h0n7@stance_independence",
+      "b": "iy72@stance_independence",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "stance_independence"
+    },
+    {
+      "a": "h0n7@stance_independence",
+      "b": "sy73",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "stance_independence"
+    },
+    {
+      "a": "h0n7@stance_independence",
+      "b": "sy73",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "stance_independence"
+    },
+    {
+      "a": "h0n7@stance_independence",
+      "b": "sy74",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "stance_independence"
+    },
+    {
+      "a": "h0n7@stance_independence",
+      "b": "sy74",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "stance_independence"
+    },
+    {
+      "a": "h0n7@stance_independence",
+      "b": "sy75@stance_independence",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "stance_independence"
+    },
+    {
+      "a": "h82a",
+      "b": "l8a5",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "h82a",
+      "b": "up7h@affective_warmth_supply",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "h82a",
+      "b": "wgjk@affective_warmth_supply",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "h82a",
+      "b": "z035@affective_warmth_supply",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "h82a",
+      "b": "z127",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "h82a",
+      "b": "z127",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "iai0",
+      "b": "p8a8",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "creative_depth_quality"
+    },
+    {
+      "a": "iai0",
+      "b": "zpwa",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "creative_depth_quality"
+    },
+    {
+      "a": "iai0",
+      "b": "zpwa",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "creative_depth_quality"
+    },
+    {
+      "a": "iy72@perspective_balance",
+      "b": "j45l",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "iy72@perspective_balance",
+      "b": "kp2q",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "iy72@perspective_balance",
+      "b": "onv4",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "iy72@perspective_balance",
+      "b": "yjj2",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "iy72@perspective_balance",
+      "b": "z045",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "iy72@perspective_balance",
+      "b": "z046@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "iy72@perspective_balance",
+      "b": "z047",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "iy72@perspective_balance",
+      "b": "z048",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "iy72@perspective_balance",
+      "b": "z049",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "iy72@perspective_balance",
+      "b": "z050@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "iy72@perspective_balance",
+      "b": "z051",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "iy72@perspective_balance",
+      "b": "z130",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "iy72@stance_independence",
+      "b": "sy73",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "stance_independence"
+    },
+    {
+      "a": "iy72@stance_independence",
+      "b": "sy74",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "stance_independence"
+    },
+    {
+      "a": "iy72@stance_independence",
+      "b": "sy74",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "stance_independence"
+    },
+    {
+      "a": "iy72@stance_independence",
+      "b": "sy75@stance_independence",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "stance_independence"
+    },
+    {
+      "a": "j45l",
+      "b": "kp2q",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "j45l",
+      "b": "onv4",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "j45l",
+      "b": "yjj2",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "j45l",
+      "b": "z045",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "j45l",
+      "b": "z046@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "j45l",
+      "b": "z047",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "j45l",
+      "b": "z048",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "j45l",
+      "b": "z049",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "j45l",
+      "b": "z050@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "j45l",
+      "b": "z051",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "j45l",
+      "b": "z130",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "jsqq",
+      "b": "lds2@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "jsqq",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "jsqq",
+      "b": "lpuw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "jsqq",
+      "b": "mlct",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "jsqq",
+      "b": "mlct",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "jsqq",
+      "b": "mlct",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "jsqq",
+      "b": "z138@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "jsqq",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "jsqq",
+      "b": "zwhy",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "kp2q",
+      "b": "onv4",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "kp2q",
+      "b": "onv4",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "kp2q",
+      "b": "onv4",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "kp2q",
+      "b": "yjj2",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "kp2q",
+      "b": "z045",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "kp2q",
+      "b": "z046@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "kp2q",
+      "b": "z047",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "kp2q",
+      "b": "z048",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "kp2q",
+      "b": "z049",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "kp2q",
+      "b": "z050@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "kp2q",
+      "b": "z051",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "kp2q",
+      "b": "z130",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "l8a5",
+      "b": "up7h@affective_warmth_supply",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "l8a5",
+      "b": "wgjk@affective_warmth_supply",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "l8a5",
+      "b": "z035@affective_warmth_supply",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "l8a5",
+      "b": "z127",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "lds2@declination_delivery_conduct",
+      "b": "lds9@declination_delivery_conduct",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "declination_delivery_conduct"
+    },
+    {
+      "a": "lds2@declination_delivery_conduct",
+      "b": "lds9@declination_delivery_conduct",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "declination_delivery_conduct"
+    },
+    {
+      "a": "lds2@falsehood_emission_control",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "lds2@falsehood_emission_control",
+      "b": "lie0@falsehood_emission_control",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "lds2@falsehood_emission_control",
+      "b": "lpuw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "lds2@falsehood_emission_control",
+      "b": "mlct",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "lds2@falsehood_emission_control",
+      "b": "z138@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "lds2@falsehood_emission_control",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "lds2@material_disclosure_duty",
+      "b": "lie0@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "lds2@material_disclosure_duty",
+      "b": "lie0@material_disclosure_duty",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "lds2@material_disclosure_duty",
+      "b": "z055@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "lie0@falsehood_emission_control",
+      "b": "lpuw",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "lie0@falsehood_emission_control",
+      "b": "mlct",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "lie0@falsehood_emission_control",
+      "b": "z138@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "lie0@falsehood_emission_control",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "lie0@material_disclosure_duty",
+      "b": "z055@material_disclosure_duty",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "material_disclosure_duty"
+    },
+    {
+      "a": "lpuw",
+      "b": "mlct",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "lpuw",
+      "b": "z138@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "lpuw",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "lpuw",
+      "b": "zwhy",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "mlct",
+      "b": "z138@falsehood_emission_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "mlct",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "mlct",
+      "b": "zwhy",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "onv4",
+      "b": "yjj2",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "onv4",
+      "b": "yjj2",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "onv4",
+      "b": "z045",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "onv4",
+      "b": "z046@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "onv4",
+      "b": "z047",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "onv4",
+      "b": "z048",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "onv4",
+      "b": "z049",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "onv4",
+      "b": "z050@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "onv4",
+      "b": "z051",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "onv4",
+      "b": "z130",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "p8a8",
+      "b": "zpwa",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "creative_depth_quality"
+    },
+    {
+      "a": "rse0@demeanor_excess_suppression",
+      "b": "wgjk@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "rse0@demeanor_excess_suppression",
+      "b": "z034",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "rse0@demeanor_excess_suppression",
+      "b": "z075@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "rse0@demeanor_excess_suppression",
+      "b": "z109@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "rse0@demeanor_excess_suppression",
+      "b": "z110@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "sy73",
+      "b": "sy74",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "stance_independence"
+    },
+    {
+      "a": "sy73",
+      "b": "sy74",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "stance_independence"
+    },
+    {
+      "a": "sy73",
+      "b": "sy75@stance_independence",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "stance_independence"
+    },
+    {
+      "a": "sy73",
+      "b": "sy75@stance_independence",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "stance_independence"
+    },
+    {
+      "a": "sy74",
+      "b": "sy75@stance_independence",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "stance_independence"
+    },
+    {
+      "a": "sy74",
+      "b": "sy75@stance_independence",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "stance_independence"
+    },
+    {
+      "a": "sy75@answer_basis_flagging",
+      "b": "z108@answer_basis_flagging",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "answer_basis_flagging"
+    },
+    {
+      "a": "up7h@affective_warmth_supply",
+      "b": "wgjk@affective_warmth_supply",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "up7h@affective_warmth_supply",
+      "b": "wgjk@affective_warmth_supply",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "up7h@affective_warmth_supply",
+      "b": "z035@affective_warmth_supply",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "up7h@affective_warmth_supply",
+      "b": "z035@affective_warmth_supply",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "up7h@affective_warmth_supply",
+      "b": "z127",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "up7h@affective_warmth_supply",
+      "b": "z127",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "up7h@escalation_to_human_help",
+      "b": "xcg4",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "up7h@escalation_to_human_help",
+      "b": "xcg4",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "up7h@escalation_to_human_help",
+      "b": "xcg4",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "up7h@escalation_to_human_help",
+      "b": "xcg4",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "up7h@escalation_to_human_help",
+      "b": "z035@escalation_to_human_help",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "up7h@escalation_to_human_help",
+      "b": "z035@escalation_to_human_help",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "wgjk@affective_warmth_supply",
+      "b": "z035@affective_warmth_supply",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "wgjk@affective_warmth_supply",
+      "b": "z127",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "wgjk@affective_warmth_supply",
+      "b": "z127",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "wgjk@demeanor_excess_suppression",
+      "b": "z034",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "wgjk@demeanor_excess_suppression",
+      "b": "z034",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "wgjk@demeanor_excess_suppression",
+      "b": "z034",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "wgjk@demeanor_excess_suppression",
+      "b": "z075@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "wgjk@demeanor_excess_suppression",
+      "b": "z109@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "wgjk@demeanor_excess_suppression",
+      "b": "z110@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "xcg4",
+      "b": "z035@escalation_to_human_help",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "xcg4",
+      "b": "z035@escalation_to_human_help",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "yjj2",
+      "b": "z045",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "yjj2",
+      "b": "z045",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "yjj2",
+      "b": "z046@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "yjj2",
+      "b": "z046@perspective_balance",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "yjj2",
+      "b": "z047",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "yjj2",
+      "b": "z047",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "yjj2",
+      "b": "z048",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "yjj2",
+      "b": "z049",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "yjj2",
+      "b": "z050@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "yjj2",
+      "b": "z051",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "yjj2",
+      "b": "z130",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "yjj2",
+      "b": "z130",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z034",
+      "b": "z075@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "z034",
+      "b": "z109@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "z034",
+      "b": "z110@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "z035@affective_warmth_supply",
+      "b": "z127",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "z035@affective_warmth_supply",
+      "b": "z127",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "affective_warmth_supply"
+    },
+    {
+      "a": "z045",
+      "b": "z046@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z045",
+      "b": "z047",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z045",
+      "b": "z048",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z045",
+      "b": "z049",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z045",
+      "b": "z049",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z045",
+      "b": "z050@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z045",
+      "b": "z051",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z045",
+      "b": "z051",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z045",
+      "b": "z130",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z046@perspective_balance",
+      "b": "z047",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z046@perspective_balance",
+      "b": "z048",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z046@perspective_balance",
+      "b": "z049",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z046@perspective_balance",
+      "b": "z050@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z046@perspective_balance",
+      "b": "z051",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z046@perspective_balance",
+      "b": "z130",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z046@register_level_setting",
+      "b": "z075@register_level_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "register_level_setting"
+    },
+    {
+      "a": "z046@register_level_setting",
+      "b": "z140@register_level_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "register_level_setting"
+    },
+    {
+      "a": "z047",
+      "b": "z048",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z047",
+      "b": "z049",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z047",
+      "b": "z050@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z047",
+      "b": "z051",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z047",
+      "b": "z130",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z048",
+      "b": "z049",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z048",
+      "b": "z050@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z048",
+      "b": "z051",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z048",
+      "b": "z130",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z049",
+      "b": "z050@perspective_balance",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z049",
+      "b": "z051",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z049",
+      "b": "z130",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z050@perspective_balance",
+      "b": "z051",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z050@perspective_balance",
+      "b": "z051",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z050@perspective_balance",
+      "b": "z130",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z050@perspective_balance",
+      "b": "z130",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z050@uncertainty_signaling",
+      "b": "z110@uncertainty_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "uncertainty_signaling"
+    },
+    {
+      "a": "z051",
+      "b": "z130",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "perspective_balance"
+    },
+    {
+      "a": "z055@action_accounting_disclosure",
+      "b": "z056@action_accounting_disclosure",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "z055@action_accounting_disclosure",
+      "b": "z056@action_accounting_disclosure",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "action_accounting_disclosure"
+    },
+    {
+      "a": "z056@length_calibration",
+      "b": "z109@length_calibration",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "length_calibration"
+    },
+    {
+      "a": "z056@length_calibration",
+      "b": "z139",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "length_calibration"
+    },
+    {
+      "a": "z056@length_calibration",
+      "b": "z140@length_calibration",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "length_calibration"
+    },
+    {
+      "a": "z071",
+      "b": "z076",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "manner_shift_control"
+    },
+    {
+      "a": "z071",
+      "b": "z077@manner_shift_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "manner_shift_control"
+    },
+    {
+      "a": "z071",
+      "b": "z141",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "manner_shift_control"
+    },
+    {
+      "a": "z071",
+      "b": "z141",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "manner_shift_control"
+    },
+    {
+      "a": "z071",
+      "b": "z141",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "manner_shift_control"
+    },
+    {
+      "a": "z071",
+      "b": "zlk1",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "manner_shift_control"
+    },
+    {
+      "a": "z075@demeanor_excess_suppression",
+      "b": "z109@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "z075@demeanor_excess_suppression",
+      "b": "z110@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "z075@register_level_setting",
+      "b": "z140@register_level_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "register_level_setting"
+    },
+    {
+      "a": "z076",
+      "b": "z077@manner_shift_control",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "manner_shift_control"
+    },
+    {
+      "a": "z076",
+      "b": "z077@manner_shift_control",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "manner_shift_control"
+    },
+    {
+      "a": "z076",
+      "b": "z077@manner_shift_control",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "manner_shift_control"
+    },
+    {
+      "a": "z076",
+      "b": "z077@manner_shift_control",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "manner_shift_control"
+    },
+    {
+      "a": "z076",
+      "b": "z141",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "manner_shift_control"
+    },
+    {
+      "a": "z076",
+      "b": "zlk1",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "manner_shift_control"
+    },
+    {
+      "a": "z077@manner_shift_control",
+      "b": "z141",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "manner_shift_control"
+    },
+    {
+      "a": "z077@manner_shift_control",
+      "b": "zlk1",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "manner_shift_control"
+    },
+    {
+      "a": "z107",
+      "b": "z108@unprompted_intervention_dosing",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "z107",
+      "b": "z108@unprompted_intervention_dosing",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "z107",
+      "b": "z110@unprompted_intervention_dosing",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "z108@unprompted_intervention_dosing",
+      "b": "z110@unprompted_intervention_dosing",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "z108@unprompted_intervention_dosing",
+      "b": "z110@unprompted_intervention_dosing",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "unprompted_intervention_dosing"
+    },
+    {
+      "a": "z109@demeanor_excess_suppression",
+      "b": "z110@demeanor_excess_suppression",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "z109@demeanor_excess_suppression",
+      "b": "z110@demeanor_excess_suppression",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "z109@demeanor_excess_suppression",
+      "b": "z110@demeanor_excess_suppression",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "demeanor_excess_suppression"
+    },
+    {
+      "a": "z109@length_calibration",
+      "b": "z139",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "length_calibration"
+    },
+    {
+      "a": "z109@length_calibration",
+      "b": "z140@length_calibration",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "length_calibration"
+    },
+    {
+      "a": "z138@falsehood_emission_control",
+      "b": "zwhy",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "falsehood_emission_control"
+    },
+    {
+      "a": "z139",
+      "b": "z140@length_calibration",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "length_calibration"
+    },
+    {
+      "a": "z139",
+      "b": "z140@length_calibration",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "length_calibration"
+    },
+    {
+      "a": "z141",
+      "b": "zlk1",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "manner_shift_control"
+    },
+    {
+      "a": "z141",
+      "b": "zlk1",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "manner_shift_control"
+    }
+  ],
+  "bridges": [
+    {
+      "a": "5lkf",
+      "b": "z068",
+      "relation": "shares_example",
+      "subtype": null
+    },
+    {
+      "a": "66cj",
+      "b": "z068",
+      "relation": "shares_example",
+      "subtype": null
+    },
+    {
+      "a": "6yer",
+      "b": "lie0",
+      "relation": "thematic",
+      "subtype": "conditions"
+    },
+    {
+      "a": "7ru5",
+      "b": "h82a",
+      "relation": "same_sentence",
+      "subtype": null
+    },
+    {
+      "a": "7ru5",
+      "b": "h82a",
+      "relation": "thematic",
+      "subtype": "reinforces"
+    },
+    {
+      "a": "92bt",
+      "b": "e9ny",
+      "relation": "thematic",
+      "subtype": "conditions"
+    },
+    {
+      "a": "92bt",
+      "b": "z068",
+      "relation": "shares_example",
+      "subtype": null
+    },
+    {
+      "a": "92bt",
+      "b": "z068",
+      "relation": "thematic",
+      "subtype": "specializes"
+    },
+    {
+      "a": "d0pu",
+      "b": "g1pr",
+      "relation": "shares_example",
+      "subtype": null
+    },
+    {
+      "a": "d0pu",
+      "b": "g1pr",
+      "relation": "thematic",
+      "subtype": "conditions"
+    },
+    {
+      "a": "d0pu",
+      "b": "l8a5",
+      "relation": "shares_example",
+      "subtype": null
+    },
+    {
+      "a": "dlfp",
+      "b": "z109",
+      "relation": "shares_example",
+      "subtype": null
+    },
+    {
+      "a": "g33a",
+      "b": "wgjk",
+      "relation": "shares_example",
+      "subtype": null
+    },
+    {
+      "a": "g33a",
+      "b": "z034",
+      "relation": "shares_example",
+      "subtype": null
+    },
+    {
+      "a": "h0n5",
+      "b": "z108",
+      "relation": "thematic",
+      "subtype": "conditions"
+    },
+    {
+      "a": "h0n6",
+      "b": "h82a",
+      "relation": "thematic",
+      "subtype": "specializes"
+    },
+    {
+      "a": "lds9",
+      "b": "lie0",
+      "relation": "thematic",
+      "subtype": "specializes"
+    },
+    {
+      "a": "up7h",
+      "b": "z034",
+      "relation": "shares_example",
+      "subtype": null
+    },
+    {
+      "a": "wgjk",
+      "b": "xcg4",
+      "relation": "shares_example",
+      "subtype": null
+    },
+    {
+      "a": "xcg4",
+      "b": "z034",
+      "relation": "shares_example",
+      "subtype": null
+    },
+    {
+      "a": "z034",
+      "b": "z127",
+      "relation": "thematic",
+      "subtype": "reinforces"
+    },
+    {
+      "a": "z075",
+      "b": "z077",
+      "relation": "thematic",
+      "subtype": "conditions"
+    }
+  ],
+  "components": [
+    {
+      "cid": "unit:01",
+      "size": 27,
+      "provenance": "component comp:07 unchanged + merged comp:27 (affinity 2) + merged comp:06 (affinity 4) + merged comp:08 (affinity 6)",
+      "dominant_dimension": "uncertainty_signaling",
+      "members": [
+        "3hgm@uncertainty_signaling",
+        "5ckd",
+        "6yer",
+        "7qme@action_accounting_disclosure",
+        "7qme@disclosure_of_action_and_halt",
+        "agk0@action_accounting_disclosure",
+        "agk0@material_disclosure_duty",
+        "agk0@uncertainty_signaling",
+        "cova@action_accounting_disclosure",
+        "cova@disclosure_of_action_and_halt",
+        "h0n2",
+        "h0n3@material_disclosure_duty",
+        "h0n3@uncertainty_signaling",
+        "h0n4@action_accounting_disclosure",
+        "h0n4@material_disclosure_duty",
+        "h0n4@objective_admissibility_bar",
+        "lds2@declination_delivery_conduct",
+        "lds2@material_disclosure_duty",
+        "lds9@confidential_information_stewardship",
+        "lds9@declination_delivery_conduct",
+        "lds9@withheld_content_signaling",
+        "lie0@material_disclosure_duty",
+        "z050@uncertainty_signaling",
+        "z055@action_accounting_disclosure",
+        "z055@material_disclosure_duty",
+        "z056@action_accounting_disclosure",
+        "z110@uncertainty_signaling"
+      ]
+    },
+    {
+      "cid": "unit:02",
+      "size": 22,
+      "provenance": "component comp:01 unchanged + merged comp:18 (affinity 4)",
+      "dominant_dimension": "falsehood_emission_control",
+      "members": [
+        "7ru5",
+        "9fpw",
+        "by9a",
+        "cp0y",
+        "d0pu@falsehood_emission_control",
+        "dcqh@falsehood_emission_control",
+        "dcqh@relational_boundary_keeping",
+        "g33a@falsehood_emission_control",
+        "h0n1",
+        "h0n3@falsehood_emission_control",
+        "h0n4@falsehood_emission_control",
+        "h0n5",
+        "h0n6@falsehood_emission_control",
+        "h0n7@falsehood_emission_control",
+        "jsqq",
+        "lds2@falsehood_emission_control",
+        "lie0@falsehood_emission_control",
+        "lpuw",
+        "mlct",
+        "z138@falsehood_emission_control",
+        "z138@relational_boundary_keeping",
+        "zwhy"
+      ]
+    },
+    {
+      "cid": "unit:03",
+      "size": 21,
+      "provenance": "component comp:03 unchanged + merged comp:14 (affinity 6) + merged comp:04 (affinity 9)",
+      "dominant_dimension": "affective_warmth_supply",
+      "members": [
+        "5tah@affective_warmth_supply",
+        "5tah@demeanor_excess_suppression",
+        "d0pu@demeanor_excess_suppression",
+        "g1pr",
+        "g33a@escalation_to_human_help",
+        "g33a@partialdepth_throttling",
+        "h82a",
+        "l8a5",
+        "rse0@demeanor_excess_suppression",
+        "up7h@affective_warmth_supply",
+        "up7h@escalation_to_human_help",
+        "wgjk@affective_warmth_supply",
+        "wgjk@demeanor_excess_suppression",
+        "xcg4",
+        "z034",
+        "z035@affective_warmth_supply",
+        "z035@escalation_to_human_help",
+        "z075@demeanor_excess_suppression",
+        "z109@demeanor_excess_suppression",
+        "z110@demeanor_excess_suppression",
+        "z127"
+      ]
+    },
+    {
+      "cid": "unit:04",
+      "size": 18,
+      "provenance": "component comp:02 unchanged",
+      "dominant_dimension": "perspective_balance",
+      "members": [
+        "1392",
+        "139o",
+        "4lfk",
+        "4qvw",
+        "c955@perspective_balance",
+        "iy72@perspective_balance",
+        "j45l",
+        "kp2q",
+        "onv4",
+        "yjj2",
+        "z045",
+        "z046@perspective_balance",
+        "z047",
+        "z048",
+        "z049",
+        "z050@perspective_balance",
+        "z051",
+        "z130"
+      ]
+    },
+    {
+      "cid": "unit:05",
+      "size": 13,
+      "provenance": "component comp:05 unchanged + merged comp:22 (affinity 2)",
+      "dominant_dimension": "unprompted_intervention_dosing",
+      "members": [
+        "092i",
+        "5lkf@unprompted_intervention_dosing",
+        "66cj@unprompted_intervention_dosing",
+        "ak12",
+        "dlfp@unprompted_intervention_dosing",
+        "iai0",
+        "p8a8",
+        "z107",
+        "z108@frame_question_or_assumption",
+        "z108@proceed_on_default_assumption",
+        "z108@unprompted_intervention_dosing",
+        "z110@unprompted_intervention_dosing",
+        "zpwa"
+      ]
+    },
+    {
+      "cid": "unit:06",
+      "size": 13,
+      "provenance": "component comp:12 unchanged + merged comp:28 (affinity 3) + merged comp:17 (affinity 3) + merged comp:11 (affinity 2)",
+      "dominant_dimension": "manner_shift_control",
+      "members": [
+        "5lkf@transformation_fidelity",
+        "66cj@output_format_adherence",
+        "66cj@transformation_fidelity",
+        "92bt",
+        "cw53",
+        "e9ny",
+        "z068",
+        "z071",
+        "z076",
+        "z077@manner_shift_control",
+        "z077@transformation_fidelity",
+        "z141",
+        "zlk1"
+      ]
+    },
+    {
+      "cid": "unit:07",
+      "size": 12,
+      "provenance": "component comp:09 unchanged + merged comp:21 (affinity 2) + merged comp:10 (affinity 2)",
+      "dominant_dimension": "answer_basis_flagging",
+      "members": [
+        "3hgm@answer_basis_flagging",
+        "agk0@answer_basis_flagging",
+        "agk0@capability_selfmodel_disclosure",
+        "dlfp@answer_basis_flagging",
+        "h0n7@stance_independence",
+        "iy72@stance_independence",
+        "rse0@capability_selfmodel_disclosure",
+        "sy73",
+        "sy74",
+        "sy75@answer_basis_flagging",
+        "sy75@stance_independence",
+        "z108@answer_basis_flagging"
+      ]
+    },
+    {
+      "cid": "unit:08",
+      "size": 12,
+      "provenance": "component comp:15 unchanged + merged comp:13 (affinity 2) + merged comp:16 (affinity 2)",
+      "dominant_dimension": "hardbar_duty_setting",
+      "members": [
+        "a222",
+        "c955@hardbar_duty_setting",
+        "g33a@hardbar_duty_setting",
+        "h0n6@register_level_setting",
+        "z046@register_level_setting",
+        "z056@length_calibration",
+        "z075@hardbar_duty_setting",
+        "z075@register_level_setting",
+        "z109@length_calibration",
+        "z139",
+        "z140@length_calibration",
+        "z140@register_level_setting"
+      ]
+    }
+  ],
+  "balance_stats": {
+    "rules": 87,
+    "copies": 138,
+    "duplication": 1.59,
+    "units": 8,
+    "sizes": [
+      27,
+      22,
+      21,
+      18,
+      13,
+      13,
+      12,
+      12
+    ],
+    "min": 12,
+    "median": 15,
+    "max": 27,
+    "structural_edges_cut": 0,
+    "bridges": 22
+  }
+}

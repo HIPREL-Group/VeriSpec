@@ -1,0 +1,586 @@
+{
+  "spec": "openluma_spec",
+  "source": "anonymized_annotated_resolved.md",
+  "authority": "system",
+  "derivation": "vertex splitting of grouped_rules_by_authority/system.json (every multi-dimension rule becomes one copy per dimension; edges attach to their context dimensions; context-free edges are bridges). Natural per-dimension components are kept whole however large; only units smaller than 12 are merged by affinity (2 x shared original rules + bridges), with merged units capped at 28 copies.",
+  "config": {
+    "cap": 28,
+    "floor": 12,
+    "subdivide": false
+  },
+  "split_vertices": [
+    "6oww",
+    "cwl3",
+    "z022",
+    "z023",
+    "z041",
+    "z146"
+  ],
+  "nodes": [
+    {
+      "id": "6h7c",
+      "rule": "6h7c",
+      "context": "hardbar_duty_setting",
+      "section": "comply_with_laws"
+    },
+    {
+      "id": "6o2w",
+      "rule": "6o2w",
+      "context": "hardbar_duty_setting",
+      "section": "no_erotica_or_gore"
+    },
+    {
+      "id": "6oww@carveout_boundary_administration",
+      "rule": "6oww",
+      "context": "carveout_boundary_administration",
+      "section": "no_erotica_or_gore"
+    },
+    {
+      "id": "6oww@hardbar_duty_setting",
+      "rule": "6oww",
+      "context": "hardbar_duty_setting",
+      "section": "no_erotica_or_gore"
+    },
+    {
+      "id": "9asd",
+      "rule": "9asd",
+      "context": "hardbar_duty_setting",
+      "section": "no_erotica_or_gore"
+    },
+    {
+      "id": "cwl1",
+      "rule": "cwl1",
+      "context": "carveout_boundary_administration",
+      "section": "comply_with_laws"
+    },
+    {
+      "id": "cwl2",
+      "rule": "cwl2",
+      "context": "unprompted_intervention_dosing",
+      "section": "comply_with_laws"
+    },
+    {
+      "id": "cwl3@carveout_boundary_administration",
+      "rule": "cwl3",
+      "context": "carveout_boundary_administration",
+      "section": "comply_with_laws"
+    },
+    {
+      "id": "cwl3@hardbar_duty_setting",
+      "rule": "cwl3",
+      "context": "hardbar_duty_setting",
+      "section": "comply_with_laws"
+    },
+    {
+      "id": "eiy6",
+      "rule": "eiy6",
+      "context": "hardbar_duty_setting",
+      "section": "no_erotica_or_gore"
+    },
+    {
+      "id": "m2cz",
+      "rule": "m2cz",
+      "context": "carveout_boundary_administration",
+      "section": "no_erotica_or_gore"
+    },
+    {
+      "id": "z021",
+      "rule": "z021",
+      "context": "material_disclosure_duty",
+      "section": "comply_with_laws"
+    },
+    {
+      "id": "z022@answer_basis_flagging",
+      "rule": "z022",
+      "context": "answer_basis_flagging",
+      "section": "comply_with_laws"
+    },
+    {
+      "id": "z022@confidential_information_stewardship",
+      "rule": "z022",
+      "context": "confidential_information_stewardship",
+      "section": "comply_with_laws"
+    },
+    {
+      "id": "z022@withheld_content_signaling",
+      "rule": "z022",
+      "context": "withheld_content_signaling",
+      "section": "comply_with_laws"
+    },
+    {
+      "id": "z023@answer_basis_flagging",
+      "rule": "z023",
+      "context": "answer_basis_flagging",
+      "section": "comply_with_laws"
+    },
+    {
+      "id": "z023@withheld_content_signaling",
+      "rule": "z023",
+      "context": "withheld_content_signaling",
+      "section": "comply_with_laws"
+    },
+    {
+      "id": "z040",
+      "rule": "z040",
+      "context": "output_format_adherence",
+      "section": "use_preset_voice_in_voice_mode"
+    },
+    {
+      "id": "z041@manner_shift_control",
+      "rule": "z041",
+      "context": "manner_shift_control",
+      "section": "use_preset_voice_in_voice_mode"
+    },
+    {
+      "id": "z041@output_format_adherence",
+      "rule": "z041",
+      "context": "output_format_adherence",
+      "section": "use_preset_voice_in_voice_mode"
+    },
+    {
+      "id": "z146@carveout_boundary_administration",
+      "rule": "z146",
+      "context": "carveout_boundary_administration",
+      "section": "sensitive_content"
+    },
+    {
+      "id": "z146@transformation_fidelity",
+      "rule": "z146",
+      "context": "transformation_fidelity",
+      "section": "sensitive_content"
+    }
+  ],
+  "edges": [
+    {
+      "a": "6h7c",
+      "b": "6o2w",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "6h7c",
+      "b": "6oww@hardbar_duty_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "6h7c",
+      "b": "9asd",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "6h7c",
+      "b": "cwl3@hardbar_duty_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "6h7c",
+      "b": "cwl3@hardbar_duty_setting",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "6h7c",
+      "b": "eiy6",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "6o2w",
+      "b": "6oww@hardbar_duty_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "6o2w",
+      "b": "6oww@hardbar_duty_setting",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "6o2w",
+      "b": "9asd",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "6o2w",
+      "b": "9asd",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "6o2w",
+      "b": "cwl3@hardbar_duty_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "6o2w",
+      "b": "eiy6",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "6o2w",
+      "b": "eiy6",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "6oww@carveout_boundary_administration",
+      "b": "cwl1",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "carveout_boundary_administration"
+    },
+    {
+      "a": "6oww@carveout_boundary_administration",
+      "b": "cwl3@carveout_boundary_administration",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "carveout_boundary_administration"
+    },
+    {
+      "a": "6oww@carveout_boundary_administration",
+      "b": "m2cz",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "carveout_boundary_administration"
+    },
+    {
+      "a": "6oww@carveout_boundary_administration",
+      "b": "z146@carveout_boundary_administration",
+      "relation": "cross_reference",
+      "subtype": "background",
+      "context": "carveout_boundary_administration"
+    },
+    {
+      "a": "6oww@carveout_boundary_administration",
+      "b": "z146@carveout_boundary_administration",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "carveout_boundary_administration"
+    },
+    {
+      "a": "6oww@hardbar_duty_setting",
+      "b": "9asd",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "6oww@hardbar_duty_setting",
+      "b": "cwl3@hardbar_duty_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "6oww@hardbar_duty_setting",
+      "b": "eiy6",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "9asd",
+      "b": "cwl3@hardbar_duty_setting",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "9asd",
+      "b": "eiy6",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "9asd",
+      "b": "eiy6",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "cwl1",
+      "b": "cwl3@carveout_boundary_administration",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "carveout_boundary_administration"
+    },
+    {
+      "a": "cwl1",
+      "b": "cwl3@carveout_boundary_administration",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "carveout_boundary_administration"
+    },
+    {
+      "a": "cwl1",
+      "b": "m2cz",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "carveout_boundary_administration"
+    },
+    {
+      "a": "cwl1",
+      "b": "z146@carveout_boundary_administration",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "carveout_boundary_administration"
+    },
+    {
+      "a": "cwl3@carveout_boundary_administration",
+      "b": "m2cz",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "carveout_boundary_administration"
+    },
+    {
+      "a": "cwl3@carveout_boundary_administration",
+      "b": "z146@carveout_boundary_administration",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "carveout_boundary_administration"
+    },
+    {
+      "a": "cwl3@hardbar_duty_setting",
+      "b": "eiy6",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "hardbar_duty_setting"
+    },
+    {
+      "a": "m2cz",
+      "b": "z146@carveout_boundary_administration",
+      "relation": "cross_reference",
+      "subtype": "background",
+      "context": "carveout_boundary_administration"
+    },
+    {
+      "a": "m2cz",
+      "b": "z146@carveout_boundary_administration",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "carveout_boundary_administration"
+    },
+    {
+      "a": "m2cz",
+      "b": "z146@carveout_boundary_administration",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "carveout_boundary_administration"
+    },
+    {
+      "a": "m2cz",
+      "b": "z146@carveout_boundary_administration",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "carveout_boundary_administration"
+    },
+    {
+      "a": "z022@answer_basis_flagging",
+      "b": "z023@answer_basis_flagging",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "answer_basis_flagging"
+    },
+    {
+      "a": "z022@answer_basis_flagging",
+      "b": "z023@answer_basis_flagging",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "answer_basis_flagging"
+    },
+    {
+      "a": "z022@withheld_content_signaling",
+      "b": "z023@withheld_content_signaling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "withheld_content_signaling"
+    },
+    {
+      "a": "z022@withheld_content_signaling",
+      "b": "z023@withheld_content_signaling",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "withheld_content_signaling"
+    },
+    {
+      "a": "z040",
+      "b": "z041@output_format_adherence",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "output_format_adherence"
+    },
+    {
+      "a": "z040",
+      "b": "z041@output_format_adherence",
+      "relation": "thematic",
+      "subtype": "conditions",
+      "context": "output_format_adherence"
+    }
+  ],
+  "bridges": [
+    {
+      "a": "6h7c",
+      "b": "cwl1",
+      "relation": "thematic",
+      "subtype": "conditions"
+    },
+    {
+      "a": "6o2w",
+      "b": "m2cz",
+      "relation": "same_sentence",
+      "subtype": null
+    },
+    {
+      "a": "6o2w",
+      "b": "m2cz",
+      "relation": "thematic",
+      "subtype": "conditions"
+    },
+    {
+      "a": "6o2w",
+      "b": "z146",
+      "relation": "cross_reference",
+      "subtype": "background"
+    },
+    {
+      "a": "6o2w",
+      "b": "z146",
+      "relation": "shares_example",
+      "subtype": null
+    },
+    {
+      "a": "6o2w",
+      "b": "z146",
+      "relation": "thematic",
+      "subtype": "specializes"
+    },
+    {
+      "a": "9asd",
+      "b": "m2cz",
+      "relation": "same_sentence",
+      "subtype": null
+    },
+    {
+      "a": "9asd",
+      "b": "m2cz",
+      "relation": "thematic",
+      "subtype": "conditions"
+    },
+    {
+      "a": "9asd",
+      "b": "z146",
+      "relation": "cross_reference",
+      "subtype": "background"
+    },
+    {
+      "a": "cwl1",
+      "b": "cwl2",
+      "relation": "same_sentence",
+      "subtype": null
+    },
+    {
+      "a": "cwl2",
+      "b": "cwl3",
+      "relation": "same_sentence",
+      "subtype": null
+    },
+    {
+      "a": "eiy6",
+      "b": "m2cz",
+      "relation": "same_sentence",
+      "subtype": null
+    },
+    {
+      "a": "eiy6",
+      "b": "m2cz",
+      "relation": "thematic",
+      "subtype": "conditions"
+    },
+    {
+      "a": "eiy6",
+      "b": "z146",
+      "relation": "cross_reference",
+      "subtype": "background"
+    },
+    {
+      "a": "z021",
+      "b": "z022",
+      "relation": "thematic",
+      "subtype": "specializes"
+    },
+    {
+      "a": "z021",
+      "b": "z023",
+      "relation": "thematic",
+      "subtype": "specializes"
+    }
+  ],
+  "components": [
+    {
+      "cid": "unit:01",
+      "size": 22,
+      "provenance": "component comp:02 unchanged + merged comp:06 (affinity 2) + merged comp:10 (affinity 2) + merged comp:01 (affinity 16) + merged comp:04 (affinity 0)",
+      "dominant_dimension": "hardbar_duty_setting",
+      "members": [
+        "6h7c",
+        "6o2w",
+        "6oww@carveout_boundary_administration",
+        "6oww@hardbar_duty_setting",
+        "9asd",
+        "cwl1",
+        "cwl2",
+        "cwl3@carveout_boundary_administration",
+        "cwl3@hardbar_duty_setting",
+        "eiy6",
+        "m2cz",
+        "z021",
+        "z022@answer_basis_flagging",
+        "z022@confidential_information_stewardship",
+        "z022@withheld_content_signaling",
+        "z023@answer_basis_flagging",
+        "z023@withheld_content_signaling",
+        "z040",
+        "z041@manner_shift_control",
+        "z041@output_format_adherence",
+        "z146@carveout_boundary_administration",
+        "z146@transformation_fidelity"
+      ]
+    }
+  ],
+  "balance_stats": {
+    "rules": 15,
+    "copies": 22,
+    "duplication": 1.47,
+    "units": 1,
+    "sizes": [
+      22
+    ],
+    "min": 22,
+    "median": 22,
+    "max": 22,
+    "structural_edges_cut": 0,
+    "bridges": 16
+  }
+}

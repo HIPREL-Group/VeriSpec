@@ -44,11 +44,12 @@ scripts/
   build_groups.py             stage 2: merge into grouped_rules.json
   check_grouped.py            stage 2 check (graph and groups)
   check_taxonomy.py           stage 2 check (topic taxonomy)
+  build_authority_views.py    stage 2: per-authority views of grouped_rules.json
   partition_authority_graphs.py  stage 2: per-authority analysis units
   detect_group_inconsistencies.py  stage 3: verifier batch runner
   prompts/detect_group_inconsistencies_{system,user}.md
   sample.env
-example_specs/         the specification used in our experiments (stages 0-1a)
+examples/              example artifacts from our experiments
 requirements.txt
 ```
 
@@ -61,8 +62,8 @@ pip install -r requirements.txt
 cp scripts/sample.env scripts/.env   # then set ANTHROPIC_API_KEY
 ```
 
-The API key is needed only to submit and collect detection batches in
-stage 3. All other scripts run offline.
+The API key is needed only for the stage 3 commands `check-tokens`,
+`submit`, `collect`, and `run`. All other scripts run offline.
 
 The skills in `skills/` are not loaded automatically. Place them where your
 agent looks for skills. For Claude Code, that is `.claude/skills/` in this
@@ -81,20 +82,6 @@ Place the specification under `specs/<X>/raw.md`, where `<X>` is a
 lowercase, underscore-separated name. `raw.md` is never modified. All
 commands below are run from this directory.
 
-`example_specs/` holds the specification we generated and used in our
-experiments, laid out as a spec directory:
-
-| File | Produced by |
-| --- | --- |
-| `raw.md` | input |
-| `anonymized.md` | stage 0 |
-| `anonymized_annotated.md` | stage 1a |
-| `anonymized_annotated_resolved.md` | stage 1a (`resolve_crossrefs.py`) |
-
-To inspect these files or rerun a stage on them, pass `example_specs` wherever
-the commands below use `specs/<X>`, for example
-`python3 scripts/check_annotation.py example_specs`.
-
 ## Stage 0: Anonymization
 
 Run the `prepare-spec` skill on `specs/<X>`. It writes
@@ -111,7 +98,7 @@ python3 scripts/check_anonymization.py specs/<X>
 **1a. Annotate.** Run the `annotate-spec` skill. It writes
 `specs/<X>/anonymized_annotated.md`, a copy of `anonymized.md` whose only
 changes are added `[^wxyz]` rule markers and `**Example[^egNNN]**` tags.
-Verify, then generate the prompt-ready copy used by all later stages:
+Verify, then generate the prompt-ready copy used by stages 2 and 3:
 
 ```bash
 python3 scripts/check_annotation.py specs/<X>
@@ -148,19 +135,20 @@ python3 scripts/check_grouped.py specs/<X>
 python3 scripts/check_taxonomy.py specs/<X>
 ```
 
-Detection then needs two views of `grouped_rules.json`. No script in this
-release generates the first two views, so derive them by filtering:
+Then derive the per-authority views that partitioning and detection read:
 
-- `grouped_rules_semantic_only.json`: remove every `sec:<path>` group (from
-  the top-level `groups` and each rule's `groups`) and every `same_section`
-  edge (from both endpoints).
-- `grouped_rules_by_authority/<authority>.json`, one file for each of `root`,
-  `system`, `developer`, `user`, and `guideline`: the subgraph induced by
-  that authority's rules. Keep only edges with both endpoints inside, keep
-  only groups that still have members, and add a top-level `authority`
-  field.
+```bash
+python3 scripts/build_authority_views.py specs/<X>
+# -> specs/<X>/grouped_rules_semantic_only.json
+# -> specs/<X>/grouped_rules_by_authority/<authority>.json
+```
 
-Then partition each authority graph into analysis units:
+The semantic-only view removes every `sec:<path>` group and every
+`same_section` edge. Each per-authority view is the subgraph of the
+semantic-only view induced by one authority's rules, so it keeps only
+same-authority edges.
+
+Finally, partition each authority graph into analysis units:
 
 ```bash
 python3 scripts/partition_authority_graphs.py <grouping_dir>
@@ -171,8 +159,9 @@ Rules with several topics are split into one copy per topic. Each resulting
 topic component becomes a unit. Units smaller than `--floor` (default 12) are
 merged by affinity, up to `--cap` (default 28) rule copies.
 
-`<grouping_dir>` is `specs/<X>`, or any directory holding the two views
-above.
+`<grouping_dir>` is `specs/<X>`, or any directory holding
+`grouped_rules_by_authority/`. Stage 3 reads both
+`grouped_rules_by_authority/` and `grouped_rules_partitioned/` from it.
 
 ## Stage 3: LLM-as-verifier detection
 

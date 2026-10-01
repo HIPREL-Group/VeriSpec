@@ -1,0 +1,411 @@
+{
+  "spec": "openluma_spec",
+  "source": "anonymized_annotated_resolved.md",
+  "authority": "developer",
+  "derivation": "vertex splitting of grouped_rules_by_authority/developer.json (every multi-dimension rule becomes one copy per dimension; edges attach to their context dimensions; context-free edges are bridges). Natural per-dimension components are kept whole however large; only units smaller than 12 are merged by affinity (2 x shared original rules + bridges), with merged units capped at 28 copies.",
+  "config": {
+    "cap": 28,
+    "floor": 12,
+    "subdivide": false
+  },
+  "split_vertices": [
+    "2mv4",
+    "2yv5",
+    "evb8",
+    "jj34",
+    "qybs"
+  ],
+  "nodes": [
+    {
+      "id": "2mv4@escalation_to_human_help",
+      "rule": "2mv4",
+      "context": "escalation_to_human_help",
+      "section": "avoid_regulated_advice"
+    },
+    {
+      "id": "2mv4@partialdepth_throttling",
+      "rule": "2mv4",
+      "context": "partialdepth_throttling",
+      "section": "avoid_regulated_advice"
+    },
+    {
+      "id": "2yv5@escalation_to_human_help",
+      "rule": "2yv5",
+      "context": "escalation_to_human_help",
+      "section": "avoid_regulated_advice"
+    },
+    {
+      "id": "2yv5@partialdepth_throttling",
+      "rule": "2yv5",
+      "context": "partialdepth_throttling",
+      "section": "avoid_regulated_advice"
+    },
+    {
+      "id": "evb8@escalation_to_human_help",
+      "rule": "evb8",
+      "context": "escalation_to_human_help",
+      "section": "avoid_regulated_advice"
+    },
+    {
+      "id": "evb8@partialdepth_throttling",
+      "rule": "evb8",
+      "context": "partialdepth_throttling",
+      "section": "avoid_regulated_advice"
+    },
+    {
+      "id": "jj34@escalation_to_human_help",
+      "rule": "jj34",
+      "context": "escalation_to_human_help",
+      "section": "avoid_regulated_advice"
+    },
+    {
+      "id": "jj34@uncertainty_signaling",
+      "rule": "jj34",
+      "context": "uncertainty_signaling",
+      "section": "avoid_regulated_advice"
+    },
+    {
+      "id": "qybs@escalation_to_human_help",
+      "rule": "qybs",
+      "context": "escalation_to_human_help",
+      "section": "avoid_regulated_advice"
+    },
+    {
+      "id": "qybs@partialdepth_throttling",
+      "rule": "qybs",
+      "context": "partialdepth_throttling",
+      "section": "avoid_regulated_advice"
+    }
+  ],
+  "edges": [
+    {
+      "a": "2mv4@escalation_to_human_help",
+      "b": "2yv5@escalation_to_human_help",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2mv4@escalation_to_human_help",
+      "b": "2yv5@escalation_to_human_help",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2mv4@escalation_to_human_help",
+      "b": "2yv5@escalation_to_human_help",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2mv4@escalation_to_human_help",
+      "b": "2yv5@escalation_to_human_help",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2mv4@escalation_to_human_help",
+      "b": "evb8@escalation_to_human_help",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2mv4@escalation_to_human_help",
+      "b": "evb8@escalation_to_human_help",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2mv4@escalation_to_human_help",
+      "b": "evb8@escalation_to_human_help",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2mv4@escalation_to_human_help",
+      "b": "evb8@escalation_to_human_help",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2mv4@escalation_to_human_help",
+      "b": "jj34@escalation_to_human_help",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2mv4@escalation_to_human_help",
+      "b": "jj34@escalation_to_human_help",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2mv4@escalation_to_human_help",
+      "b": "jj34@escalation_to_human_help",
+      "relation": "thematic",
+      "subtype": "reinforces",
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2mv4@escalation_to_human_help",
+      "b": "qybs@escalation_to_human_help",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2mv4@escalation_to_human_help",
+      "b": "qybs@escalation_to_human_help",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2mv4@escalation_to_human_help",
+      "b": "qybs@escalation_to_human_help",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2mv4@partialdepth_throttling",
+      "b": "2yv5@partialdepth_throttling",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "partialdepth_throttling"
+    },
+    {
+      "a": "2mv4@partialdepth_throttling",
+      "b": "2yv5@partialdepth_throttling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "partialdepth_throttling"
+    },
+    {
+      "a": "2mv4@partialdepth_throttling",
+      "b": "2yv5@partialdepth_throttling",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "partialdepth_throttling"
+    },
+    {
+      "a": "2mv4@partialdepth_throttling",
+      "b": "2yv5@partialdepth_throttling",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "partialdepth_throttling"
+    },
+    {
+      "a": "2mv4@partialdepth_throttling",
+      "b": "evb8@partialdepth_throttling",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "partialdepth_throttling"
+    },
+    {
+      "a": "2mv4@partialdepth_throttling",
+      "b": "evb8@partialdepth_throttling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "partialdepth_throttling"
+    },
+    {
+      "a": "2mv4@partialdepth_throttling",
+      "b": "evb8@partialdepth_throttling",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "partialdepth_throttling"
+    },
+    {
+      "a": "2mv4@partialdepth_throttling",
+      "b": "evb8@partialdepth_throttling",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "partialdepth_throttling"
+    },
+    {
+      "a": "2mv4@partialdepth_throttling",
+      "b": "qybs@partialdepth_throttling",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "partialdepth_throttling"
+    },
+    {
+      "a": "2mv4@partialdepth_throttling",
+      "b": "qybs@partialdepth_throttling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "partialdepth_throttling"
+    },
+    {
+      "a": "2mv4@partialdepth_throttling",
+      "b": "qybs@partialdepth_throttling",
+      "relation": "thematic",
+      "subtype": "specializes",
+      "context": "partialdepth_throttling"
+    },
+    {
+      "a": "2yv5@escalation_to_human_help",
+      "b": "evb8@escalation_to_human_help",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2yv5@escalation_to_human_help",
+      "b": "evb8@escalation_to_human_help",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2yv5@escalation_to_human_help",
+      "b": "jj34@escalation_to_human_help",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2yv5@escalation_to_human_help",
+      "b": "jj34@escalation_to_human_help",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2yv5@escalation_to_human_help",
+      "b": "qybs@escalation_to_human_help",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2yv5@escalation_to_human_help",
+      "b": "qybs@escalation_to_human_help",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "2yv5@partialdepth_throttling",
+      "b": "evb8@partialdepth_throttling",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "partialdepth_throttling"
+    },
+    {
+      "a": "2yv5@partialdepth_throttling",
+      "b": "evb8@partialdepth_throttling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "partialdepth_throttling"
+    },
+    {
+      "a": "2yv5@partialdepth_throttling",
+      "b": "qybs@partialdepth_throttling",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "partialdepth_throttling"
+    },
+    {
+      "a": "2yv5@partialdepth_throttling",
+      "b": "qybs@partialdepth_throttling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "partialdepth_throttling"
+    },
+    {
+      "a": "evb8@escalation_to_human_help",
+      "b": "jj34@escalation_to_human_help",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "evb8@escalation_to_human_help",
+      "b": "jj34@escalation_to_human_help",
+      "relation": "shares_example",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "evb8@escalation_to_human_help",
+      "b": "qybs@escalation_to_human_help",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "evb8@escalation_to_human_help",
+      "b": "qybs@escalation_to_human_help",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    },
+    {
+      "a": "evb8@partialdepth_throttling",
+      "b": "qybs@partialdepth_throttling",
+      "relation": "same_sentence",
+      "subtype": null,
+      "context": "partialdepth_throttling"
+    },
+    {
+      "a": "evb8@partialdepth_throttling",
+      "b": "qybs@partialdepth_throttling",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "partialdepth_throttling"
+    },
+    {
+      "a": "jj34@escalation_to_human_help",
+      "b": "qybs@escalation_to_human_help",
+      "relation": "shares_dimension",
+      "subtype": null,
+      "context": "escalation_to_human_help"
+    }
+  ],
+  "bridges": [],
+  "components": [
+    {
+      "cid": "unit:01",
+      "size": 10,
+      "provenance": "component comp:01 unchanged + merged comp:03 (affinity 2) + merged comp:02 (affinity 8)",
+      "dominant_dimension": "escalation_to_human_help",
+      "members": [
+        "2mv4@escalation_to_human_help",
+        "2mv4@partialdepth_throttling",
+        "2yv5@escalation_to_human_help",
+        "2yv5@partialdepth_throttling",
+        "evb8@escalation_to_human_help",
+        "evb8@partialdepth_throttling",
+        "jj34@escalation_to_human_help",
+        "jj34@uncertainty_signaling",
+        "qybs@escalation_to_human_help",
+        "qybs@partialdepth_throttling"
+      ]
+    }
+  ],
+  "balance_stats": {
+    "rules": 5,
+    "copies": 10,
+    "duplication": 2.0,
+    "units": 1,
+    "sizes": [
+      10
+    ],
+    "min": 10,
+    "median": 10,
+    "max": 10,
+    "structural_edges_cut": 0,
+    "bridges": 0
+  }
+}
